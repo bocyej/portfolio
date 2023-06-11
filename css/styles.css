@@ -1,0 +1,28 @@
+/* COLOR PALLETES */
+/* Dark Theme: #171717;
+White: #E3E3E3;
+Yellow: #F9B234; */
+
+
+html{
+    background-color: #171717;
+    color: #000000;
+    font-family: Code-Pro;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Code-Pro";
+    src: url("assets/fonts/CodeDemo-Bold.otf");
+    font-weight: 400;
+    font-style: normal;
+    /* Source: https://www.fontfabric.com/fonts/code-pro/ */
+}
+
+@font-face {
+    font-family: "Code-Pro";
+    src: url("assets/fonts/CodeDemo-Light.otf");
+    font-weight: 300;
+    font-style: normal;
+    /* Source: https://www.fontfabric.com/fonts/code-pro/ */
+}
