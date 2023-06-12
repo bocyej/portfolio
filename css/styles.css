@@ -4,7 +4,7 @@ White: #E3E3E3;
 Yellow: #F9B234; */
 
 
-html{
+html {
     background-color: #171717;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
@@ -23,9 +23,50 @@ html{
 
 
 /* BODY */
-#nav-name{
+/* HEADER/ TOPNAV */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+li a {
+    padding: 0px 0px 0px 35px;
+    /* top, right, bottom, left */
+    text-decoration: none;
+    color: #E3E3E3;
+}
+
+li a:hover {
+    color: #FFFFFF;
+}
+
+.topnav{
+    background-color: #171717;
+    margin-top: 3%;
+}
+
+.topnav-active {
+    color: #F9B234;
+}
+
+#nav-name {
     color: #F9B234;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 100px;
+    font-weight: 500;
+    font-size: 75px;
+}
+
+hr.horizontal-line{
+    border-top: 15px solid #E3E3E3;
+    width: 65%;
+    opacity: 100% !important;
 }
