@@ -20,3 +20,12 @@ html{
     font-style: normal;
     /* Source: https://fonts.google.com/specimen/Montserrat/tester */
 }
+
+
+/* BODY */
+#nav-name{
+    color: #F9B234;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+}
