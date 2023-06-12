@@ -63,6 +63,7 @@ li a:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 75px;
+    text-decoration: none;
 }
 
 hr.horizontal-line{
