@@ -55,7 +55,7 @@ li a:hover {
 }
 
 .topnav-active {
-    color: #F9B234;
+    color: #F9B234 !important;
 }
 
 #nav-name {
