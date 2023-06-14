@@ -131,16 +131,8 @@ hr.horizontal-line {
     font-size: 15px;
     text-transform: uppercase;
     background-color: #E3E3E3;
-}
-
-.txt {
-    color: #171717;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 2;
-    transition: 0.5s 0.25s;
-    background-color: #E3E3E3;
+    margin: 0px 0px 20px 0px;
+    /* top, right, bottom, left */
 }
 
 .view-more {
@@ -157,5 +149,5 @@ hr.horizontal-line {
 }
 
 .card:hover .infos {
-    transform: translateY(-125px);
+    transform: translateY(-45px);
 }
