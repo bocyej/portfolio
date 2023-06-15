@@ -31,10 +31,10 @@
                 <hr class="horizontal-line">
             </div>
             <div class="col-5">
-                <ul>
-                    <li><a href="portfolio_about.html">ABOUT</a></li>
-                    <li><a href="portfolio_contact.html">CONTACT</a></li>
-                    <li><a href="portfolio_projects.html" class="topnav-active">PROJECTS</a></li>
+                <ul class="navbar-ul">
+                    <li class="navbar-li"><a href="portfolio_about.html">ABOUT</a></li>
+                    <li class="navbar-li"><a href="portfolio_contact.html">CONTACT</a></li>
+                    <li class="navbar-li"><a href="portfolio_projects.html" class="topnav-active">PROJECTS</a></li>
                 </ul>
             </div>
             <div class="col-1">
@@ -43,100 +43,121 @@
 
 
         <!-- BODY -->
-
         <div class="row">
             <div class="col-1"></div>
             <div class="col-10">
                 <div class="row">
-                    <article class="card">
-                        <div class="thumbnail"></div>
-                        <div class="infos">
-                            <h2 class="title">PERSONAL WEBSITE 1</h2>
-                            <h3 class="subtitle">WEBSITE</h3>
-                            <a href="https://github.com/bocyej/Personal-Website-1" target="_blank"
-                                class="view-more">VIEW MORE</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="thumbnail"></div>
-                        <div class="infos">
-                            <h2 class="title">TECHNOLOGY WEBSITE</h2>
-                            <h3 class="subtitle">WEBSITE</h3>
-                            <a href="https://github.com/bocyej/Technology-Website-Output" target="_blank"
-                                class="view-more">VIEW MORE</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="thumbnail"></div>
-                        <div class="infos">
-                            <h2 class="title">BMI CALCULATOR</h2>
-                            <h3 class="subtitle">JAVA APPLICATION</h3>
-                            <a href="https://github.com/bocyej/BMI-Calculator-Java" target="_blank"
-                                class="view-more">VIEW MORE</a>
-                        </div>
-                    </article>
-                    <!-- insert here -->
-                    <article class="card">
-                        <div class="thumbnail"></div>
-                        <div class="infos">
-                            <h2 class="title">PIZZA SHOP</h2>
-                            <h3 class="subtitle">JAVA APPLICATION</h3>
-                            <a href="https://github.com/bocyej/Pizza-Shop-Java" target="_blank"
-                                class="view-more">VIEW MORE</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="thumbnail"></div>
-                        <div class="infos">
-                            <h2 class="title">SALES TERMINAL</h2>
-                            <h3 class="subtitle">JAVA APPLICATION</h3>
-                            <a href="https://github.com/bocyej/Sales-Terminal-Java" target="_blank"
-                                class="view-more">VIEW MORE</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="thumbnail"></div>
-                        <div class="infos">
-                            <h2 class="title">ASSESSMENT FORM</h2>
-                            <h3 class="subtitle">JAVA APPLICATION</h3>
-                            <a href="https://github.com/bocyej/Assessment-Form-Java" target="_blank"
-                                class="view-more">VIEW MORE</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="thumbnail"></div>
-                        <div class="infos">
-                            <h2 class="title">TWITTER MOBILE MOCKUP UI</h2>
-                            <h3 class="subtitle">MOBILE UI</h3>
-                            <a href="https://github.com/bocyej/Twitter-Mobile-UI-Mockup" target="_blank"
-                                class="view-more">VIEW MORE</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="thumbnail"></div>
-                        <div class="infos">
-                            <h2 class="title">FACEBOOK MOBILE MOCKUP UI</h2>
-                            <h3 class="subtitle">MOBILE UI</h3>
-                            <a href="https://github.com/bocyej/Facebook-Mobile-UI-Mockup" target="_blank"
-                                class="view-more">VIEW MORE</a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="thumbnail"></div>
-                        <div class="infos">
-                            <h2 class="title">YOUTUBE MOBILE MOCKUP UI</h2>
-                            <h3 class="subtitle">MOBILE UI</h3>
-                            <a href="https://github.com/bocyej/YouTube-Mobile-UI-Mockup" target="_blank"
-                                class="view-more">VIEW MORE</a>
-                        </div>
-                    </article>
+                    <div class="projects-list">
+                        <input type="checkbox" class="show-more-state" id="post-1" />
+                        <ul class="show-more-wrapper projects-ul">
+                            <li class="projects-li">
+                                <article class="card">
+                                    <div class="thumbnail"></div>
+                                    <div class="infos">
+                                        <h2 class="title">PERSONAL WEBSITE 1</h2>
+                                        <h3 class="subtitle">WEBSITE</h3>
+                                        <a href="https://github.com/bocyej/Personal-Website-1" target="_blank"
+                                            class="view-more">VIEW MORE</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="projects-li">
+                                <article class="card">
+                                    <div class="thumbnail"></div>
+                                    <div class="infos">
+                                        <h2 class="title">TECHNOLOGY WEBSITE</h2>
+                                        <h3 class="subtitle">WEBSITE</h3>
+                                        <a href="https://github.com/bocyej/Technology-Website-Output" target="_blank"
+                                            class="view-more">VIEW MORE</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="projects-li">
+                                <article class="card">
+                                    <div class="thumbnail"></div>
+                                    <div class="infos">
+                                        <h2 class="title">BMI CALCULATOR</h2>
+                                        <h3 class="subtitle">JAVA APPLICATION</h3>
+                                        <a href="https://github.com/bocyej/BMI-Calculator-Java" target="_blank"
+                                            class="view-more">VIEW MORE</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="show-more-target projects-li">
+                                <article class="card">
+                                    <div class="thumbnail"></div>
+                                    <div class="infos">
+                                        <h2 class="title">PIZZA SHOP</h2>
+                                        <h3 class="subtitle">JAVA APPLICATION</h3>
+                                        <a href="https://github.com/bocyej/Pizza-Shop-Java" target="_blank"
+                                            class="view-more">VIEW MORE</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="show-more-target projects-li">
+                                <article class="card">
+                                    <div class="thumbnail"></div>
+                                    <div class="infos">
+                                        <h2 class="title">SALES TERMINAL</h2>
+                                        <h3 class="subtitle">JAVA APPLICATION</h3>
+                                        <a href="https://github.com/bocyej/Sales-Terminal-Java" target="_blank"
+                                            class="view-more">VIEW MORE</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="show-more-target projects-li">
+                                <article class="card">
+                                    <div class="thumbnail"></div>
+                                    <div class="infos">
+                                        <h2 class="title">ASSESSMENT FORM</h2>
+                                        <h3 class="subtitle">JAVA APPLICATION</h3>
+                                        <a href="https://github.com/bocyej/Assessment-Form-Java" target="_blank"
+                                            class="view-more">VIEW MORE</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="show-more-target projects-li">
+                                <article class="card">
+                                    <div class="thumbnail"></div>
+                                    <div class="infos">
+                                        <h2 class="title">TWITTER MOBILE MOCKUP UI</h2>
+                                        <h3 class="subtitle">MOBILE UI</h3>
+                                        <a href="https://github.com/bocyej/Twitter-Mobile-UI-Mockup" target="_blank"
+                                            class="view-more">VIEW MORE</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="show-more-target projects-li">
+                                <article class="card">
+                                    <div class="thumbnail"></div>
+                                    <div class="infos">
+                                        <h2 class="title">FACEBOOK MOBILE MOCKUP UI</h2>
+                                        <h3 class="subtitle">MOBILE UI</h3>
+                                        <a href="https://github.com/bocyej/Facebook-Mobile-UI-Mockup" target="_blank"
+                                            class="view-more">VIEW MORE</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="show-more-target projects-li">
+                                <article class="card">
+                                    <div class="thumbnail"></div>
+                                    <div class="infos">
+                                        <h2 class="title">YOUTUBE MOBILE MOCKUP UI</h2>
+                                        <h3 class="subtitle">MOBILE UI</h3>
+                                        <a href="https://github.com/bocyej/YouTube-Mobile-UI-Mockup" target="_blank"
+                                            class="view-more">VIEW MORE</a>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <label for="post-1" class="show-more-button">asdf</label>
+                    </div>
                 </div>
             </div>
             <div class="col-1"></div>
         </div>
 
     </div>
-
 
 </body>
 
