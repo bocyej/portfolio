@@ -34,28 +34,28 @@ body {
 
 /* BODY */
 /* HEADER/ TOPNAV */
-ul {
+ul.navbar-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
+li.navbar-li {
     float: right;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 35px;
 }
 
-li a {
+li.navbar-li a {
     padding: 0px 0px 0px 35px;
     /* top, right, bottom, left */
     text-decoration: none;
     color: #E3E3E3;
 }
 
-li a:hover {
+li.navbar-li a:hover {
     color: #FFFFFF;
 }
 
@@ -150,4 +150,62 @@ hr.horizontal-line {
 
 .card:hover .infos {
     transform: translateY(-45px);
+}
+
+/* PROJECT ITEMS */
+.projects-list {
+    display: flex;
+    border: 0.1px solid orange
+}
+
+ul.projects-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* border: 0.1px solid red; */
+}
+
+li.projects-li {
+    float: left;
+    /* padding: 5px 0px 5px 10px; */
+    /* border: 1px solid orange; */
+}
+
+.show-more-state {
+    display: none;
+}
+
+.show-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.show-more-state:checked~.show-more-wrapper .show-more-target {
+    opacity: 1;
+}
+
+.show-more-state~.show-more-trigger:before {
+    content: 'Show more';
+}
+
+.show-more-state:checked~.show-more-trigger:before {
+    content: 'Show less';
+}
+
+.show-more-button {
+    display: inline-block;
+    background-color: #FFF;
+    color: #F9B234;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 10px;
+    line-height: 2;
+    border: none;
 }
