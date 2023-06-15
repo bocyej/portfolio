@@ -1,0 +1,211 @@
+/* COLOR PALLETES */
+/* Dark Theme: #171717;
+White: #E3E3E3;
+Yellow: #F9B234; */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #171717;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #171717;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+
+/* FONTS */
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url("assets/fonts/Montserrat-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+    /* Source: https://fonts.google.com/specimen/Montserrat/tester */
+}
+
+
+/* BODY */
+/* HEADER/ TOPNAV */
+ul.navbar-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li.navbar-li {
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+li.navbar-li a {
+    padding: 0px 0px 0px 35px;
+    /* top, right, bottom, left */
+    text-decoration: none;
+    color: #E3E3E3;
+}
+
+li.navbar-li a:hover {
+    color: #FFFFFF;
+}
+
+.topnav {
+    background-color: #171717;
+    margin-top: 3%;
+}
+
+.topnav-active {
+    color: #F9B234 !important;
+}
+
+#nav-name {
+    color: #F9B234;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 75px;
+    text-decoration: none;
+}
+
+hr.horizontal-line {
+    border-top: 15px solid #E3E3E3;
+    width: 65%;
+    opacity: 100% !important;
+}
+
+/* PROJECTS CARD */
+.card {
+    width: 475px;
+    height: 375px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background-color: #E3E3E3;
+    margin: 20px 20px 20px 15px;
+    /* top, right, bottom, left */
+}
+
+.thumbnail {
+    width: auto;
+    height: 100%;
+    background: url("../assets/photos/trial_1-code.png") no-repeat center;
+    background-size: cover;
+    border-radius: 5px;
+    margin: 25px 5px 0px 5px;
+    /* top, right, bottom, left */
+}
+
+.infos {
+    width: auto;
+    height: 80px;
+    position: relative;
+    padding: 10px 15px;
+    transition: 0.3s 0.15s;
+    background-color: #E3E3E3;
+    /* transform: translateY(70px); */
+}
+
+.title {
+    position: relative;
+    margin: 0px 0px 10px 0px;
+    color: #171717;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: #171717;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #E3E3E3;
+    margin: 0px 0px 20px 0px;
+    /* top, right, bottom, left */
+}
+
+.view-more {
+    color: #F9B234;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.view-more:hover {
+    color: #171717;
+}
+
+.card:hover .infos {
+    transform: translateY(-45px);
+}
+
+/* PROJECT ITEMS */
+.projects-list {
+    display: flex;
+    border: 0.1px solid orange
+}
+
+ul.projects-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* border: 0.1px solid red; */
+}
+
+li.projects-li {
+    float: left;
+    /* padding: 5px 0px 5px 10px; */
+    /* border: 1px solid orange; */
+}
+
+.show-more-state {
+    display: none;
+}
+
+.show-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.show-more-state:checked~.show-more-wrapper .show-more-target {
+    opacity: 1;
+}
+
+.show-more-state~.show-more-trigger:before {
+    content: 'Show more';
+}
+
+.show-more-state:checked~.show-more-trigger:before {
+    content: 'Show less';
+}
+
+.show-more-button {
+    display: inline-block;
+    background-color: #FFF;
+    color: #F9B234;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 10px;
+    line-height: 2;
+    border: none;
+}
