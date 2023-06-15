@@ -34,28 +34,28 @@ body {
 
 /* BODY */
 /* HEADER/ TOPNAV */
-ul.navbar-ul {
+ul.top-navbar-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li.navbar-li {
+li.top-navbar-li {
     float: right;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 35px;
 }
 
-li.navbar-li a {
+li.top-navbar-li a {
     padding: 0px 0px 0px 35px;
     /* top, right, bottom, left */
     text-decoration: none;
     color: #E3E3E3;
 }
 
-li.navbar-li a:hover {
+li.top-navbar-li a:hover {
     color: #FFFFFF;
 }
 
@@ -80,6 +80,52 @@ hr.horizontal-line {
     border-top: 15px solid #E3E3E3;
     width: 65%;
     opacity: 100% !important;
+}
+
+/* FOOTER/ BOTTOM NAV */
+.bottom-nav {
+    background-color: #171717;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+
+#footer-statement {
+    color: #E3E3E3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    /* margin: 20px 0px 0px 0px; */
+}
+
+ul.bottom-navbar-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li.bottom-navbar-li {
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+li.bottom-navbar-li a {
+    padding: 0px 0px 0px 25px;
+    /* top, right, bottom, left */
+    text-decoration: none;
+    color: #E3E3E3;
+}
+
+li.bottom-navbar-li a:hover {
+    color: #FFFFFF;
+}
+
+.social-media-icon {
+    width: auto;
+    height: 80px;
 }
 
 /* PROJECTS CARD */
