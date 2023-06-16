@@ -43,7 +43,31 @@
 
         <!-- BODY -->
         <div class="row">
-            
+            <div class="col-1"></div>
+            <div class="col-9 contact-area">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="name-form" placeholder="NAME">
+                    </div>
+                    <div class="col-6">
+                        <input type="email" class="form-control" id="email-form" placeholder="EMAIL"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control" id="title-form" placeholder="TITLE">
+                        <div class="input-group">
+                            <textarea class="form-control textarea-message" aria-label="textarea" rows="13"
+                                placeholder="MESSAGE"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 button-area contact-area">
+                <button type="submit" class="send-button">SEND ▶</button>
+            </div>
+            <div class="col-1"></div>
         </div>
 
 
