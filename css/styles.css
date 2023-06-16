@@ -21,6 +21,10 @@ body {
     font-weight: 400;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* FONTS */
 @font-face {
