@@ -264,3 +264,114 @@ li.projects-li {
     width: 35%;
     margin: 0 auto;
 }
+
+
+/* ---CONTACT PAGE--- */
+.contact-area {
+    margin: 5px 0px 0px 0px;
+}
+
+input[type=text] {
+    width: 100%;
+    background-color: #171717;
+    color: #E3E3E3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: 5px solid #E3E3E3;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    margin: 5px 0px 15px 0px;
+}
+
+input[type=text]:focus {
+    background-color: #171717;
+    color: #E3E3E3;
+    border: 5px solid #E3E3E3;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 100%;
+    background-color: #171717;
+    color: #E3E3E3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: 5px solid #E3E3E3;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    margin: 5px 0px 15px 0px;
+}
+
+input[type=email]:focus {
+    background-color: #171717;
+    color: #E3E3E3;
+    border: 5px solid #E3E3E3;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+.textarea-message {
+    width: 100%;
+    background-color: #171717;
+    color: #E3E3E3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: 5px solid #E3E3E3;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    margin: 5px 0px 0px 0px;
+}
+
+.textarea-message:focus {
+    background-color: #171717;
+    color: #E3E3E3;
+    border: 5px solid #E3E3E3;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+.button-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.send-button {
+    background-color: #171717;
+    color: #F9B234;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 5px solid #F9B234;
+    padding: 15px 25px;
+    float: right;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* ---ABOUT PAGE--- */
+#about-title {
+    display: block;
+    color: #E3E3E3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 75px;
+    text-decoration: none;
+    margin: 0px 0px 15px 0px;
+    /* border: 0.1px dotted orange; */
+}
