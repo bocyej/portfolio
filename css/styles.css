@@ -358,6 +358,7 @@ input[type=email]:focus {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 15px;
+    width: 75%;
     text-transform: uppercase;
     text-decoration: none;
     border: 5px solid #F9B234;
