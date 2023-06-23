@@ -176,6 +176,17 @@ li.bottom-navbar-li a:hover {
     padding: 15px 25px;
 }
 
+.portfolio-developer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#developer-image {
+    max-width: 70%;
+    max-height: 70%;
+}
+
 
 /* ---PROJECTS PAGE--- */
 /* PROJECTS CARD */
