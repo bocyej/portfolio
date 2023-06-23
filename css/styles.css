@@ -25,6 +25,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.test {
+    border: 1px #fff dotted;
+}
+
 
 /* FONTS */
 @font-face {
