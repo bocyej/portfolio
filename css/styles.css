@@ -158,6 +158,24 @@ li.bottom-navbar-li a:hover {
     text-decoration: none;
 }
 
+.center-items {
+    display: grid;
+    place-items: center;
+}
+
+.download-button {
+    background-color: #171717;
+    color: #F9B234;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    width: 75%;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 5px solid #F9B234;
+    padding: 15px 25px;
+}
+
 
 /* ---PROJECTS PAGE--- */
 /* PROJECTS CARD */
