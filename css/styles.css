@@ -513,6 +513,19 @@ input[type=email]:focus {
     /* border: 0.1px dotted orange; */
 }
 
+.view-certification-button {
+    background-color: #171717;
+    color: #E3E3E3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    width: 15%;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 5px solid #E3E3E3;
+    padding: 15px 25px;
+    margin: 0px 0px 50px 0px;
+}
 
 #round-vertically {
     padding-top: 15px;
