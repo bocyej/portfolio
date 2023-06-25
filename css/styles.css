@@ -12,6 +12,7 @@ html {
     color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +24,10 @@ body {
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+.test {
+    border: 1px #fff dotted;
 }
 
 
@@ -65,8 +70,9 @@ li.top-navbar-li a:hover {
 
 .topnav {
     background-color: #171717;
-    margin-top: 3%;
+    padding-top: 3%;
     margin-bottom: 1%;
+    position: sticky;
 }
 
 .topnav-active {
@@ -132,6 +138,89 @@ li.bottom-navbar-li a:hover {
 .social-media-icon {
     width: auto;
     height: 80px;
+}
+
+
+/* HOME AREA */
+#area-name {
+    display: block;
+    color: #F9B234;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    text-decoration: none;
+    border-bottom: 10px solid #E3E3E3;
+    width: 55%;
+    opacity: 100%;
+    margin: 150px 0px 35px 0px;
+}
+
+#home-area {
+    padding: 50px 0 50px 0;
+}
+
+/* PROJECTS AREA */
+#projects-area {
+    padding: 50px 0 50px 0;
+}
+
+/* CONTACT AREA */
+#contact-area {
+    padding: 50px 0 50px 0;
+}
+
+/* ABOUT AREA */
+#about-area {
+    padding: 50px 0 50px 0;
+}
+
+
+/* ---HOME PAGE--- */
+.introduction-white {
+    color: #E3E3E3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.introduction-yellow {
+    color: #F9B234;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.center-items {
+    display: grid;
+    place-items: center;
+}
+
+.download-button {
+    background-color: #171717;
+    color: #F9B234;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    width: 75%;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 5px solid #F9B234;
+    padding: 15px 25px;
+}
+
+.portfolio-developer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#developer-image {
+    max-width: 70%;
+    max-height: 70%;
 }
 
 
@@ -266,7 +355,7 @@ li.projects-li {
     text-align: center;
     border-top: 5px solid #E3E3E3;
     width: 35%;
-    margin: 0 auto;
+    margin: 0px auto 25px auto;
 }
 
 
