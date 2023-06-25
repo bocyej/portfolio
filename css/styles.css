@@ -141,6 +141,40 @@ li.bottom-navbar-li a:hover {
 }
 
 
+/* HOME AREA */
+#area-name {
+    display: block;
+    color: #F9B234;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 75px;
+    text-decoration: none;
+    border-bottom: 15px solid #E3E3E3;
+    width: 65%;
+    opacity: 100%;
+    margin: 100px 0px 35px 0px;
+}
+
+#home-area {
+    padding: 50px 0 50px 0;
+}
+
+/* PROJECTS AREA */
+#projects-area {
+    padding: 50px 0 50px 0;
+}
+
+/* CONTACT AREA */
+#contact-area {
+    padding: 50px 0 50px 0;
+}
+
+/* ABOUT AREA */
+#about-area {
+    padding: 50px 0 50px 0;
+}
+
+
 /* ---HOME PAGE--- */
 .introduction-white {
     color: #E3E3E3;
