@@ -147,12 +147,12 @@ li.bottom-navbar-li a:hover {
     color: #F9B234;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 75px;
+    font-size: 50px;
     text-decoration: none;
-    border-bottom: 15px solid #E3E3E3;
-    width: 65%;
+    border-bottom: 10px solid #E3E3E3;
+    width: 55%;
     opacity: 100%;
-    margin: 100px 0px 35px 0px;
+    margin: 150px 0px 35px 0px;
 }
 
 #home-area {
