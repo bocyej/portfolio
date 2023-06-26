@@ -520,10 +520,31 @@ input[type=email]:focus {
     margin: 0px 0px 25px 0px;
 }
 
-.skill-level-inner {
+.skill-level-inner-1 {
     border-top: 20px solid #E3E3E3;
     width: 90%;
 }
+
+.skill-level-inner-2 {
+    border-top: 20px solid #E3E3E3;
+    width: 50%;
+}
+
+.skill-level-inner-3 {
+    border-top: 20px solid #E3E3E3;
+    width: 35%;
+}
+
+.skill-level-inner-4 {
+    border-top: 20px solid #E3E3E3;
+    width: 60%;
+}
+
+.skill-level-inner-5 {
+    border-top: 20px solid #E3E3E3;
+    width: 75%;
+}
+
 .view-certification-button {
     background-color: #171717;
     color: #E3E3E3;
