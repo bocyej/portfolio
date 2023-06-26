@@ -513,6 +513,17 @@ input[type=email]:focus {
     /* border: 0.1px dotted orange; */
 }
 
+.skill-level-outer {
+    border: 5px solid #E3E3E3;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    margin: 0px 0px 25px 0px;
+}
+
+.skill-level-inner {
+    border-top: 20px solid #E3E3E3;
+    width: 90%;
+}
 .view-certification-button {
     background-color: #171717;
     color: #E3E3E3;
