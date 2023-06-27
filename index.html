@@ -242,34 +242,50 @@
         <div id="contact-area"></div>
         <div class="row">
             <div class="col-1"></div>
-            <div class="col-9 contact-area">
+            <div class="col-10 contact-area">
                 <div class="row">
                     <div class="col-6">
                         <h1 id="area-name">CONTACT</h1>
                     </div>
                     <div class="col-6"></div>
                 </div>
-                <div class="row">
-                    <div class="col-6">
-                        <input type="text" class="form-control" id="name-form" placeholder="NAME">
+                <form action="mailto:laurel.jacob@spumanila.edu.ph" method="get" enctype="text/plain">
+                    <div class="row">
+                        <div class="col-5">
+                            <!-- SENDER NAME -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name-form" placeholder="NAME">
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <!-- EMAIL ADDRESS -->
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email-form" placeholder="EMAIL"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            </div>
+                        </div>
+                        <div class="col-2"></div>
                     </div>
-                    <div class="col-6">
-                        <input type="email" class="form-control" id="email-form" placeholder="EMAIL"
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <input type="text" class="form-control" id="title-form" placeholder="TITLE">
-                        <div class="input-group">
-                            <textarea class="form-control textarea-message" aria-label="textarea" rows="13"
-                                placeholder="MESSAGE"></textarea>
+                    <div class="row">
+                        <div class="col-10">
+                            <!-- EMAIL TITLE -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="title-form" placeholder="TITLE">
+                            </div>
+
+                            <!-- EMAIL MESSAGE -->
+                            <div class="form-group">
+                                <textarea class="form-control textarea-message" aria-label="textarea" rows="13"
+                                    placeholder="MESSAGE"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <!-- SUBMIT BUTTON -->
+                        <div class="col-1 button-area contact-area">
+                            <button type="submit" class="send-button">SEND ▶</button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-1 button-area contact-area">
-                <button type="submit" class="send-button">SEND ▶</button>
+                </form>
             </div>
             <div class="col-1"></div>
         </div>
