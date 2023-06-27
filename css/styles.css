@@ -447,14 +447,11 @@ input[type=email]:focus {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 15px;
-    width: 75%;
+    width: 100%;
     text-transform: uppercase;
     text-decoration: none;
     border: 5px solid #F9B234;
-    padding: 15px 25px;
-    float: right;
-    position: absolute;
-    bottom: 0;
+    padding: 15px 20px;
 }
 
 
@@ -511,6 +508,38 @@ input[type=email]:focus {
     text-decoration: none;
     margin: 0px 0px 30px 0px;
     /* border: 0.1px dotted orange; */
+}
+
+.skill-level-outer {
+    border: 5px solid #E3E3E3;
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    margin: 0px 0px 25px 0px;
+}
+
+.skill-level-inner-1 {
+    border-top: 20px solid #E3E3E3;
+    width: 90%;
+}
+
+.skill-level-inner-2 {
+    border-top: 20px solid #E3E3E3;
+    width: 50%;
+}
+
+.skill-level-inner-3 {
+    border-top: 20px solid #E3E3E3;
+    width: 35%;
+}
+
+.skill-level-inner-4 {
+    border-top: 20px solid #E3E3E3;
+    width: 60%;
+}
+
+.skill-level-inner-5 {
+    border-top: 20px solid #E3E3E3;
+    width: 75%;
 }
 
 .view-certification-button {
