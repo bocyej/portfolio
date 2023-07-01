@@ -89,13 +89,27 @@ li.top-navbar-li a:hover {
     color: #F9B234;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 7.80vh;
+    font-size: 75px;
     text-decoration: none;
     border-bottom: 15px solid #E3E3E3;
     width: 65%;
     opacity: 100%;
     margin: 0px 0px 15px 0px;
     user-select: none;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 5px;
+    width: 35px;
+    background: #E3E3E3;
+    margin: 0px 0px 6px 0px;
+    border-radius: 0;
 }
 
 
@@ -640,4 +654,54 @@ input[type=email]:focus {
     background-color: #E3E3E3;
     height: 215px;
     margin: auto;
+}
+
+
+/* RESPONSIVENESS */
+@media (max-width: 1400px) {
+    .col-s-1 {
+        display: none;
+    }
+
+    .col-s-5 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 45px 0px 0px 275px;
+    }
+
+    #menuItems {
+        display: none;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 10px;
+        background-color: #171717;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #menuItems.show {
+        display: flex;
+    }
+
+    #menuItems li {
+        margin-bottom: 10px;
+    }
+
+    #menuItems li a {
+        color: #E3E3E3;
+        font-size: 25px;
+    }
+
+    #menuItems li a:hover {
+        color: #FFFFFF;
+    }
 }
