@@ -66,7 +66,6 @@ li.top-navbar-li {
 
 li.top-navbar-li a {
     padding: 0px 0px 0px 35px;
-    /* top, right, bottom, left */
     text-decoration: none;
     color: #E3E3E3;
 }
@@ -151,7 +150,6 @@ li.bottom-navbar-li {
 
 li.bottom-navbar-li a {
     padding: 0px 0px 0px 25px;
-    /* top, right, bottom, left */
     text-decoration: none;
 }
 
@@ -263,7 +261,6 @@ li.bottom-navbar-li a {
     overflow: hidden;
     background-color: #E3E3E3;
     margin: 20px 20px 20px 15px;
-    /* top, right, bottom, left */
 }
 
 .thumbnail {
@@ -273,7 +270,6 @@ li.bottom-navbar-li a {
     background-size: cover;
     border-radius: 5px;
     margin: 25px 5px 0px 5px;
-    /* top, right, bottom, left */
 }
 
 .infos {
@@ -306,7 +302,6 @@ li.bottom-navbar-li a {
     text-transform: uppercase;
     background-color: #E3E3E3;
     margin: 0px 0px 20px 0px;
-    /* top, right, bottom, left */
 }
 
 .view-more {
