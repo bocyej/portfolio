@@ -23,49 +23,56 @@
 
         <!-- HEADER/ TOP NAVIGATION BAR -->
         <div class="row topnav sticky-top">
-            <div class="col-1">
+            <div class="col-1 col-sm-1">
             </div>
-            <div class="col-5">
+            <div class="col-5 col-sm-5">
                 <!-- <a href="#home-area" id="nav-name">JACOB</a> -->
                 <a href="#" onclick="scrollToTop(); return false;" id="nav-name">JACOB</a>
             </div>
-            <div class="col-5">
-                <ul class="top-navbar-ul">
+            <div class="col-5 col-sm-5 ">
+                <!-- Hamburger Menu Icon -->
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="top-navbar-ul" id="menuItems">
                     <li class="top-navbar-li"><a href="#about-area">ABOUT</a></li>
                     <li class="top-navbar-li"><a href="#contact-area">CONTACT</a></li>
                     <li class="top-navbar-li"><a href="#projects-area">PROJECTS</a></li>
                 </ul>
             </div>
-            <div class="col-1">
+            <div class="col-1 col-sm-1">
             </div>
         </div>
+
 
 
         <!-- BODY -->
         <!-- HOME AREA -->
         <div class="row" id="home-area">
-            <div class="col-1">
+            <div class="col-1 col-sm-1">
             </div>
-            <div class="col-5 center-items">
+            <div class="col-5 col-sm-5 center-items">
                 <!-- <a href="assets/files/sample_pdf_download.pdf" target="_blank" download="Laurel,Jacob_CV">DOWNLOAD CV</a> -->
                 <h1 class="introduction-white">I'M A <span class="introduction-yellow">DEVELOPER</span></h1>
                 <button class="download-button" type="submit"
                     onclick="window.open('assets/files/sample_pdf_download.pdf')">DOWNLOAD CV</button>
             </div>
-            <div class="col-5">
+            <div class="col-5 col-s-5">
                 <div class="portfolio-developer">
                     <img id="developer-image" src="assets/photos/jacob-photo.png" alt="Jacob Laurel">
                 </div>
             </div>
-            <div class="col-1">
+            <div class="col-1 col-sm-1">
             </div>
         </div>
 
         <!-- PROJECTS AREA -->
         <div id="projects-area"></div>
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10">
+            <div class="col-1 col-sm-1"></div>
+            <div class="col-10 col-sm-10">
                 <div class="row">
                     <div class="col-6">
                         <h1 id="area-name">PROJECTS</h1>
@@ -235,14 +242,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-1"></div>
+            <div class="col-1 col-sm-1"></div>
         </div>
 
         <!-- CONTACT AREA -->
         <div id="contact-area"></div>
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10 contact-area">
+            <div class="col-1 col-sm-1"></div>
+            <div class="col-10 col-sm-10 contact-area">
                 <div class="row">
                     <div class="col-6">
                         <h1 id="area-name">CONTACT</h1>
@@ -287,15 +294,15 @@
                     </div>
                 </form>
             </div>
-            <div class="col-1"></div>
+            <div class="col-1 col-sm-1"></div>
         </div>
 
         <!-- ABOUT AREA -->
         <div id="about-area"></div>
         <div class="row">
-            <div class="col-1">
+            <div class="col-1 col-sm-1">
             </div>
-            <div class="col-10">
+            <div class="col-10 col-sm-10">
                 <div class="row">
                     <div class="col-6">
                         <h1 id="area-name">ABOUT</h1>
@@ -304,7 +311,7 @@
                 </div>
                 <h1 class="about-title">EDUCATION</h1>
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col-1 col-sm-1 test">
                         <div class="round" id="round-vertically">
                             <div class="circle" id="circle-star"><span>&bull;</span></div>
                             <div class="circle-line-education-1"></div>
@@ -315,7 +322,7 @@
                             <div class="circle" id="circle-cursor"><span>&bull;</span></div>
                         </div>
                     </div>
-                    <div class="col-11">
+                    <div class="col-11 col-sm-11">
                         <h1 class="title-school">St. Paul University Manila</h1>
                         <h2 class="title-year">2021 - Present</h2>
                         <h3 class="title-description-1">College | Bachelor of Science in Computer Science</h3>
@@ -346,7 +353,7 @@
                 </div>
                 <h1 class="about-title">EXPERIENCES</h1>
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col-1 col-sm-1">
                         <div class="round" id="round-vertically">
                             <div class="circle" id="circle-star"><span>&bull;</span></div>
                             <div class="circle-line-experiences"></div>
@@ -359,10 +366,11 @@
                             <div class="circle" id="circle-cursor"><span>&bull;</span></div>
                         </div>
                     </div>
-                    <div class="col-11">
+                    <div class="col-11 col-sm-11">
                         <h1 class="title-school">JPCS Organization President</h1>
                         <h2 class="title-year">2023 - Present</h2>
-                        <h3 class="title-description-2">- President on Junior Philippine Computer Society in my university.
+                        <h3 class="title-description-2">- President on Junior Philippine Computer Society in my
+                            university.
                         </h3>
                         <br>
                         <h1 class="title-school">Library Attendance System</h1>
@@ -388,9 +396,9 @@
                 </div>
                 <h1 class="about-title">SKILLS</h1>
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col-1 col-sm-1">
                     </div>
-                    <div class="col-6">
+                    <div class="col-5 col-sm-5">
                         <h1 class="title-school">HTML/CSS</h1>
                         <h1 class="title-school">SQL</h1>
                         <h1 class="title-school">JAVASCRIPT</h1>
@@ -398,7 +406,7 @@
                         <h1 class="title-school">JAVA</h1>
                         <br>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 col-sm-5">
                         <div class="skill-level-outer">
                             <div class="skill-level-inner-1"></div>
                         </div>
@@ -416,10 +424,12 @@
                         </div>
                         <br>
                     </div>
+                    <div class="col-1 col-sm-1">
+                    </div>
                 </div>
                 <h1 class="about-title">CERTIFICATIONS</h1>
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col-1 col-sm-1">
                         <div class="round" id="round-vertically">
                             <div class="circle" id="circle-star"><span>&bull;</span></div>
                             <div class="circle-line-certifications"></div>
@@ -428,7 +438,7 @@
                             <div class="circle" id="circle-cursor"><span>&bull;</span></div>
                         </div>
                     </div>
-                    <div class="col-11">
+                    <div class="col-11 col-sm-11">
                         <h1 class="title-school">Microsoft Excel Certification</h1>
                         <h2 class="title-year">2021</h2>
                         <h3 class="title-description-1">- Passed the Microsoft Office Specialist: Excel Associate
@@ -454,19 +464,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-1">
+            <div class="col-1 col-sm-1">
             </div>
         </div>
 
 
         <!-- FOOTER/ BOTTOM NAVIGATION BAR -->
         <div class="row bottom-nav">
-            <div class="col-1">
+            <div class="col-1 col-sm-1">
             </div>
-            <div class="col-5">
+            <div class="col-5 col-sm-5">
                 <h1 id="footer-statement">Copyright © 2023 by Jacob Laurel. All Rights Reserved.</h1>
             </div>
-            <div class="col-5">
+            <div class="col-5 col-sm-5">
                 <ul class="bottom-navbar-ul">
                     <li class="bottom-navbar-li"><a href="https://github.com/bocyej" target="_blank"><img
                                 src="assets/photos/github-logo-outline.png" alt="Github Icon"
@@ -490,7 +500,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-1">
+            <div class="col-1 col-sm-1">
             </div>
         </div>
 
