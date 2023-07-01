@@ -51,6 +51,9 @@ ul.top-navbar-ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 li.top-navbar-li {
@@ -668,6 +671,7 @@ input[type=email]:focus {
         text-align: center;
     }
 
+    /* -HEADER/ TOPNAV- */
     .hamburger-menu {
         display: flex;
         align-items: center;
@@ -677,7 +681,7 @@ input[type=email]:focus {
 
     #menuItems {
         display: none;
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
         padding: 10px;
         background-color: #171717;
