@@ -3,6 +3,8 @@
 White: #E3E3E3;
 Yellow: #F9B234; */
 
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Outfit:wght@100..900&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -16,12 +18,137 @@ html {
 }
 
 body {
-    background-color: #171717;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    background-color: #252525;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 
+FANCY FONT
+.fredericka-the-great-regular {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+NORMAL FONT
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+} */
+
+
+
+/* HEADER */
+header {
+    background-color: #252525;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    padding: 0 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 85%;
+}
+
+nav ul li {
+    margin: 0 0 0 50px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin: 15px 0;
+}
+
+#home a {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #F9B234;
+}
+
+#underline {
+    border-top: 5px solid #FFFFFF;
+}
+
+
+
+/* MAIN */
+
+
+
+/* PROJECTS */
+#projects-area {}
+
+
+/* CONTACT */
+#contact-area {}
+
+
+/* ABOUT */
+#about-area {}
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 85%;
+}
+
+footer ul li {
+    margin: 0 0 0 15px;
+}
+
+footer ul li a img {
+    height: auto;
+    width: 50px;
+}
+
+#copyright{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #FFFFFF;
+    width: 15%;
 }
