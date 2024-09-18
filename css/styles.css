@@ -1,5 +1,6 @@
 /* COLOR PALLETES */
 /* Dark Theme: #252525;
+Dark Gray: #333333;
 White: #E3E3E3;
 Yellow: #F9B234; */
 
@@ -22,7 +23,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 
 ul {
@@ -50,6 +51,9 @@ NORMAL FONT
 /* HEADER */
 header {
     background-color: #252525;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav {
@@ -57,7 +61,6 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 5;
     padding: 0 50px;
 }
 
@@ -104,19 +107,237 @@ nav a {
 
 
 /* MAIN */
+main {
+    padding: 0 50px;
+}
 
+#main-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#introduction-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#introduction-container h1 {
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#introduction-container h1 span {
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F9B234;
+}
+
+#download-button {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #252525;
+    color: #F9B234;
+    border: 5px solid #F9B234;
+    padding: 15px 25px;
+}
+
+.yellow-container {
+    background-color: #FFFFFF;
+    width: 30%;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+#main-area img {
+    width: 100%;
+    border-radius: 50px;
+}
 
 
 /* PROJECTS */
-#projects-area {}
+#projects-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: -150px;
+    padding-top: 150px;
+}
+
+#projects-title {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #F9B234;
+    background-color: #252525;
+    width: 100%;
+    position: sticky;
+    top: 10%;
+    padding: 0 0 10px;
+    z-index: 1;
+}
+
+#projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 300px;
+    width: auto;
+    aspect-ratio: 16/9;
+    flex-grow: 1;
+}
+
+.project-card img {
+    flex-grow: 1;
+    height: auto;
+    object-fit: cover;
+    height: 90%;
+    width: 100%;
+}
 
 
 /* CONTACT */
-#contact-area {}
+#contact-title {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #F9B234;
+    background-color: #252525;
+    width: 100%;
+    position: sticky;
+    top: 10%;
+    padding: 0 0 10px;
+    z-index: 2;
+}
 
+#contact-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: -150px;
+    padding-top: 150px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#contact-area form {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+#contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 95%;
+}
+
+#contact-content input {
+    background-color: #252525;
+    color: #F9B234;
+    border: 5px solid #F9B234;
+    padding: 10px;
+    width: 100%;
+}
+
+#contact-form button{
+    background-color: #252525;
+    color: #F9B234;
+    border: 5px solid #F9B234;
+    padding: 10px;
+    width: 5%;
+}
+
+#name-and-email {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
 
 /* ABOUT */
-#about-area {}
+#about-title {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #F9B234;
+    background-color: #252525;
+    width: 100%;
+    position: sticky;
+    top: 10%;
+    padding: 0 0 10px;
+    z-index: 3;
+    /* padding: 20px 0; */
+}
+
+#about-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: -150px;
+    padding-top: 150px;
+}
+
+#education{
+    display: flex;
+    flex-direction: row;
+}
+
+#experience{
+    display: flex;
+    flex-direction: row;
+}
+
+#skill{
+    display: flex;
+    flex-direction: row;
+}
+
+.label-container {
+    width: 25%;
+    /* position: sticky;
+    top: 35%;
+    background-color: #252525;
+    z-index: 2; */
+}
+
+.about-label {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #F9B234;
+    margin: 0 0 0 50px;
+}
+
+.content-container {
+    width: 75%;
+    height: 300px;
+    background-color: azure;
+}
 
 
 /* FOOTER */
@@ -144,7 +365,7 @@ footer ul li a img {
     width: 50px;
 }
 
-#copyright{
+#copyright {
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-style: normal;
