@@ -23,7 +23,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    /* display: none; */
+    display: none;
 }
 
 ul {
@@ -51,9 +51,11 @@ NORMAL FONT
 /* HEADER */
 header {
     background-color: #252525;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
+    width: 100%;
+    /* border: 1px blue solid */
 }
 
 nav {
@@ -108,7 +110,8 @@ nav a {
 
 /* MAIN */
 main {
-    padding: 0 50px;
+    width: 100%;
+
 }
 
 #main-area {
@@ -116,12 +119,19 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    height: 110vh;
+    padding: 0 50px;
+    background-image: url("/assets/photos/background-2.png");
+    background-repeat: no-repeat;
+    width: 100% !important;
 }
 
 #introduction-container {
     display: flex;
     flex-direction: column;
-
+    background-color: #333333;
+    padding: 25px;
+    border-radius: 20px;
 }
 
 #introduction-container h1 {
@@ -131,6 +141,7 @@ main {
     font-style: normal;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin: 0 0 10px;
 }
 
 #introduction-container h1 span {
@@ -150,7 +161,7 @@ main {
     padding: 15px 25px;
 }
 
-.yellow-container {
+.photo-container {
     background-color: #FFFFFF;
     width: 30%;
     padding: 10px;
@@ -168,7 +179,9 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: -150px;
-    padding-top: 150px;
+    padding: 150px 50px 0;
+    height: 100vh;
+    background-color: #333333;
 }
 
 #projects-title {
@@ -177,11 +190,11 @@ main {
     font-style: normal;
     text-transform: uppercase;
     color: #F9B234;
-    background-color: #252525;
+    background-color: #333333;
     width: 100%;
     position: sticky;
     top: 10%;
-    padding: 0 0 10px;
+    padding: 0 50px 10px;
     z-index: 1;
 }
 
@@ -225,7 +238,7 @@ main {
     width: 100%;
     position: sticky;
     top: 10%;
-    padding: 0 0 10px;
+    padding: 0 50px 10px;
     z-index: 2;
 }
 
@@ -233,7 +246,8 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: -150px;
-    padding-top: 150px;
+    padding: 150px 50px 0;
+    height: 100vh;
 }
 
 #contact-form {
@@ -259,12 +273,13 @@ main {
 #contact-content input {
     background-color: #252525;
     color: #F9B234;
-    border: 5px solid #F9B234;
+    border: 5px solid #FFFFFF;
     padding: 10px;
     width: 100%;
+    height: 5vh;
 }
 
-#contact-form button{
+#contact-form button {
     background-color: #252525;
     color: #F9B234;
     border: 5px solid #F9B234;
@@ -278,6 +293,14 @@ main {
     gap: 15px;
 }
 
+#contact-content textarea {
+    background-color: #252525;
+    color: #F9B234;
+    border: 5px solid #FFFFFF;
+    padding: 10px;
+    width: 100%;
+}
+
 /* ABOUT */
 #about-title {
     font-family: "Fredericka the Great", serif;
@@ -285,33 +308,35 @@ main {
     font-style: normal;
     text-transform: uppercase;
     color: #F9B234;
-    background-color: #252525;
+    background-color: #333333;
     width: 100%;
     position: sticky;
     top: 10%;
-    padding: 0 0 10px;
+    padding: 0 50px 10px;
     z-index: 3;
-    /* padding: 20px 0; */
+    ;
 }
 
 #about-area {
     display: flex;
     flex-direction: column;
     margin-top: -150px;
-    padding-top: 150px;
+    padding: 150px 50px 0;
+    height: 100vh;
+    background-color: #333333;
 }
 
-#education{
+#education {
     display: flex;
     flex-direction: row;
 }
 
-#experience{
+#experience {
     display: flex;
     flex-direction: row;
 }
 
-#skill{
+#skill {
     display: flex;
     flex-direction: row;
 }
@@ -335,7 +360,7 @@ main {
 
 .content-container {
     width: 75%;
-    height: 300px;
+    height: 30px;
     background-color: azure;
 }
 
