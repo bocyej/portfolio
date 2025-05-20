@@ -5,6 +5,14 @@ function scrollToTop() {
     });
 }
 
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth'
+    });
+}
+
 function redirectProjectsArea() {
     const button = document.querySelector('.show-more-button');
     const targetDiv = document.querySelector('#projects-area');
