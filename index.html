@@ -22,9 +22,9 @@
                 <div id="underline"></div>
             </div>
             <ul>
-                <li><a href="#projects-area">Projects</a></li>
-                <li><a href="#contact-area">Contact</a></li>
-                <li><a href="#about-area">About</a></li>
+                <li><a href="#" onclick="scrollToSection('projects-area'); return false;">Projects</a></li>
+                <li><a href="#" onclick="scrollToSection('contact-area'); return false;">Contact</a></li>
+                <li><a href="#" onclick="scrollToSection('about-area'); return false;">About</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +37,7 @@
                 <button id="download-button" type="submit"
                     onclick="window.open('assets/files/sample_pdf_download.pdf')">DOWNLOAD CV</button>
             </div>
-            <div class="yellow-container">
+            <div class="photo-container">
                 <img id="developer-image" src="assets/photos/jacob-photo-2.png" alt="Jacob Laurel">
             </div>
         </div>
@@ -80,7 +80,8 @@
                             <input type="email" class="form-control" id="email-form" placeholder="EMAIL">
                         </div>
                         <input type="text" class="form-control" id="title-form" placeholder="TITLE">
-                        <input type="text" class="form-control" id="message-form" placeholder="MESSAGE">
+                        <textarea name="message" rows="10" cols="30" class="form-control" id="message-form"
+                            placeholder="MESSAGE"></textarea>
                     </div>
                     <button type="submit" class="send-button">SEND ▶</button>
                 </form>
