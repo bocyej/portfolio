@@ -6,495 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+    <!-- <link rel="icon" type="image/icon" href="images/favicon.png"> -->
+    <title>J.Laurel | Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
-    <title>Portfolio | Jacob Laurel</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-    <div class="container-fluid">
+<body class="no-scroll">
+    <header>
+        <nav class="limited-width">
+            <a href="#" class="active"><img src="assets/photos/logo-light.png" alt="Logo" class="header-logo"></a>
+            <a href="#" class="hamburger"><i class="fa fa-bars"></i></a>
+            <ul>
+                <li><a href="#" class="underline">// About</a></li>
+                <li><a href="#" class="underline">// Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- HEADER/ TOP NAVIGATION BAR -->
-        <div class="row topnav sticky-top">
-            <div class="col-1">
-            </div>
-            <div class="col-5">
-                <!-- <a href="#home-area" id="nav-name">JACOB</a> -->
-                <a href="#" onclick="scrollToTop(); return false;" id="nav-name">JACOB</a>
-            </div>
-            <div class="col-5">
-                <ul class="top-navbar-ul">
-                    <li class="top-navbar-li"><a href="#about-area">ABOUT</a></li>
-                    <li class="top-navbar-li"><a href="#contact-area">CONTACT</a></li>
-                    <li class="top-navbar-li"><a href="#projects-area">PROJECTS</a></li>
-                </ul>
-            </div>
-            <div class="col-1">
-            </div>
-        </div>
+    <main>
+        <section class="introduction">
+            <div class="limited-width">
+                <article class="introduction-description">
+                    <h1>What's Up? I'm <span class="sparkle">Jacob Laurel</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
 
+                <div class="to-projects">
+                    <a href="#">
+                        <p>See what I do! <i class="fa fa-long-arrow-right" id="arrow" aria-hidden="true"></i></p>
+                    </a>
+                </div>
 
-        <!-- BODY -->
-        <!-- HOME AREA -->
-        <div class="row" id="home-area">
-            <div class="col-1">
-            </div>
-            <div class="col-5 center-items">
-                <!-- <a href="assets/files/sample_pdf_download.pdf" target="_blank" download="Laurel,Jacob_CV">DOWNLOAD CV</a> -->
-                <h1 class="introduction-white">I'M A <span class="introduction-yellow">DEVELOPER</span></h1>
-                <button class="download-button" type="submit"
-                    onclick="window.open('assets/files/sample_pdf_download.pdf')">DOWNLOAD CV</button>
-            </div>
-            <div class="col-5">
-                <div class="portfolio-developer">
-                    <img id="developer-image" src="assets/photos/jacob-photo.png" alt="Jacob Laurel">
+                <div class="social-media">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#E8E9EB"
+                                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#E8E9EB"
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#E8E9EB"
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                            </path>
+                        </svg>
+                    </a>
                 </div>
             </div>
-            <div class="col-1">
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="limited-width">
+                <p>Copyright&copy; 2025 by Jacob Laurel. All Rights Reserved.</p>
             </div>
-        </div>
+        </section>
+    </footer>
 
-        <!-- PROJECTS AREA -->
-        <div id="projects-area"></div>
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10">
-                <div class="row">
-                    <div class="col-6">
-                        <h1 id="area-name">PROJECTS</h1>
-                    </div>
-                    <div class="col-6"></div>
-                </div>
-                <div class="row">
-                    <div class="projects-list">
-                        <input type="checkbox" class="show-more-state" id="post-1" />
-                        <ul class="show-more-wrapper projects-ul">
-                            <li class="projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">PERSONAL WEBSITE 1</h2>
-                                        <h3 class="subtitle">WEBSITE</h3>
-                                        <a href="https://github.com/bocyej/Personal-Website-1" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">TECHNOLOGY WEBSITE</h2>
-                                        <h3 class="subtitle">WEBSITE</h3>
-                                        <a href="https://github.com/bocyej/Technology-Website-Output" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">BMI CALCULATOR</h2>
-                                        <h3 class="subtitle">JAVA APPLICATION</h3>
-                                        <a href="https://github.com/bocyej/BMI-Calculator-Java" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="show-more-target projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">PIZZA SHOP</h2>
-                                        <h3 class="subtitle">JAVA APPLICATION</h3>
-                                        <a href="https://github.com/bocyej/Pizza-Shop-Java" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="show-more-target projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">SALES TERMINAL</h2>
-                                        <h3 class="subtitle">JAVA APPLICATION</h3>
-                                        <a href="https://github.com/bocyej/Sales-Terminal-Java" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="show-more-target projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">ASSESSMENT FORM</h2>
-                                        <h3 class="subtitle">JAVA APPLICATION</h3>
-                                        <a href="https://github.com/bocyej/Assessment-Form-Java" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="show-more-target projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">TWITTER MOBILE MOCKUP UI</h2>
-                                        <h3 class="subtitle">MOBILE UI</h3>
-                                        <a href="https://github.com/bocyej/Twitter-Mobile-UI-Mockup" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="show-more-target projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">FACEBOOK MOBILE MOCKUP UI</h2>
-                                        <h3 class="subtitle">MOBILE UI</h3>
-                                        <a href="https://github.com/bocyej/Facebook-Mobile-UI-Mockup" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="show-more-target projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">YOUTUBE MOBILE MOCKUP UI</h2>
-                                        <h3 class="subtitle">MOBILE UI</h3>
-                                        <a href="https://github.com/bocyej/YouTube-Mobile-UI-Mockup" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="show-more-target projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">WEATHER APP MOCKUP UI</h2>
-                                        <h3 class="subtitle">MOBILE UI</h3>
-                                        <a href="https://github.com/bocyej/Weather-App-UI-Mockup" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="show-more-target projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">INNOTRASH</h2>
-                                        <h3 class="subtitle">MOBILE UI</h3>
-                                        <a href="https://github.com/bocyej/innotrash" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="show-more-target projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">LOBE WEBSITE MOCKUP</h2>
-                                        <h3 class="subtitle">WEBSITE</h3>
-                                        <a href="https://github.com/bocyej/Lobe-Website-Mockup" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="show-more-target projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">MODAL AND VALIDATION FORM</h2>
-                                        <h3 class="subtitle">WEBSITE</h3>
-                                        <a href="https://github.com/bocyej/Modal-and-Validation-Form-FrontEnd"
-                                            target="_blank" class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="show-more-target projects-li">
-                                <article class="card">
-                                    <div class="thumbnail"></div>
-                                    <div class="infos">
-                                        <h2 class="title">FORM VALIDATION</h2>
-                                        <h3 class="subtitle">WEBSITE</h3>
-                                        <a href="https://github.com/bocyej/Form-Validation-FrontEnd" target="_blank"
-                                            class="view-more">VIEW MORE</a>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
-                        <label for="post-1" class="show-more-button" onclick="redirectProjectsArea()"></label>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1"></div>
-        </div>
-
-        <!-- CONTACT AREA -->
-        <div id="contact-area"></div>
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10 contact-area">
-                <div class="row">
-                    <div class="col-6">
-                        <h1 id="area-name">CONTACT</h1>
-                    </div>
-                    <div class="col-6"></div>
-                </div>
-                <form action="mailto:laurel.jacob@spumanila.edu.ph" method="get" enctype="text/plain">
-                    <div class="row">
-                        <div class="col-5">
-                            <!-- SENDER NAME -->
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name-form" placeholder="NAME">
-                            </div>
-                        </div>
-                        <div class="col-5">
-                            <!-- EMAIL ADDRESS -->
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email-form" placeholder="EMAIL"
-                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                            </div>
-                        </div>
-                        <div class="col-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-10">
-                            <!-- EMAIL TITLE -->
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="title-form" placeholder="TITLE">
-                            </div>
-
-                            <!-- EMAIL MESSAGE -->
-                            <div class="form-group">
-                                <textarea class="form-control textarea-message" aria-label="textarea" rows="13"
-                                    placeholder="MESSAGE"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-1"></div>
-                        <!-- SUBMIT BUTTON -->
-                        <div class="col-1 button-area contact-area">
-                            <button type="submit" class="send-button">SEND ▶</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-1"></div>
-        </div>
-
-        <!-- ABOUT AREA -->
-        <div id="about-area"></div>
-        <div class="row">
-            <div class="col-1">
-            </div>
-            <div class="col-10">
-                <div class="row">
-                    <div class="col-6">
-                        <h1 id="area-name">ABOUT</h1>
-                    </div>
-                    <div class="col-6"></div>
-                </div>
-                <h1 class="about-title">EDUCATION</h1>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="round" id="round-vertically">
-                            <div class="circle" id="circle-star"><span>&bull;</span></div>
-                            <div class="circle-line-education-1"></div>
-                            <div class="circle" id="circle-key"><span>&bull;</span></div>
-                            <div class="circle-line-education-2"></div>
-                            <div class="circle" id="circle-cursor"><span>&bull;</span></div>
-                            <div class="circle-line-education-3"></div>
-                            <div class="circle" id="circle-cursor"><span>&bull;</span></div>
-                        </div>
-                    </div>
-                    <div class="col-11">
-                        <h1 class="title-school">St. Paul University Manila</h1>
-                        <h2 class="title-year">2021 - Present</h2>
-                        <h3 class="title-description-1">College | Bachelor of Science in Computer Science</h3>
-                        <h3 class="title-description-1">GWA (4th Year): N/A</h3>
-                        <h3 class="title-description-1">GWA (3rd Year): N/A</h3>
-                        <h3 class="title-description-1">GWA (2nd Year): -ongoing-</h3>
-                        <h3 class="title-description-2">GWA (1st Year): 93.948</h3>
-                        <br>
-                        <h1 class="title-school">St. Paul University Manila</h1>
-                        <h2 class="title-year">2019 - 2021</h2>
-                        <h3 class="title-description-1">Senior High School | STEM</h3>
-                        <h3 class="title-description-1">General Average (Grade 12): 94.11</h3>
-                        <h3 class="title-description-2">General Average (Grade 11): 90.65</h3>
-                        <br>
-                        <h1 class="title-school">Philippine Women's University</h1>
-                        <h2 class="title-year">2016 - 2019</h2>
-                        <h3 class="title-description-1">Junior High School</h3>
-                        <h3 class="title-description-1">General Average (Grade 10): 93.25</h3>
-                        <h3 class="title-description-1">General Average (Grade 9): 92.00</h3>
-                        <h3 class="title-description-2">General Average (Grade 8): 89.63</h3>
-                        <br>
-                        <h1 class="title-school">Malayan High School of Science</h1>
-                        <h2 class="title-year">2015 - 2016</h2>
-                        <h3 class="title-description-1">Junior High School</h3>
-                        <h3 class="title-description-2">General Average (Grade 7): 90.05</h3>
-                        <br>
-                    </div>
-                </div>
-                <h1 class="about-title">EXPERIENCES</h1>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="round" id="round-vertically">
-                            <div class="circle" id="circle-star"><span>&bull;</span></div>
-                            <div class="circle-line-experiences"></div>
-                            <div class="circle" id="circle-key"><span>&bull;</span></div>
-                            <div class="circle-line-experiences"></div>
-                            <div class="circle" id="circle-cursor"><span>&bull;</span></div>
-                            <div class="circle-line-experiences"></div>
-                            <div class="circle" id="circle-cursor"><span>&bull;</span></div>
-                            <div class="circle-line-experiences"></div>
-                            <div class="circle" id="circle-cursor"><span>&bull;</span></div>
-                        </div>
-                    </div>
-                    <div class="col-11">
-                        <h1 class="title-school">JPCS Organization President</h1>
-                        <h2 class="title-year">2023 - Present</h2>
-                        <h3 class="title-description-2">- President on Junior Philippine Computer Society in my school.
-                        </h3>
-                        <br>
-                        <h1 class="title-school">Library Attendance System</h1>
-                        <h2 class="title-year">2023</h2>
-                        <h3 class="title-description-2">- My team and I developed an attendance system for my school's
-                            library.</h3>
-                        <br>
-                        <h1 class="title-school">Impact 2021 Hackathon</h1>
-                        <h2 class="title-year">2021</h2>
-                        <h3 class="title-description-2">- Won 1st Runner-up for Impact Hub's Hackathon Smart Cities
-                            2021.</h3>
-                        <br>
-                        <h1 class="title-school">Arduino Circuit Programmer</h1>
-                        <h2 class="title-year">2020 - 2021</h2>
-                        <h3 class="title-description-2">- The programmer of my group.</h3>
-                        <br>
-                        <h1 class="title-school">Vex IQ Robotics Programmer</h1>
-                        <h2 class="title-year">2019 - 2020</h2>
-                        <h3 class="title-description-2">- The programmer of my group.
-                        </h3>
-                        <br>
-                    </div>
-                </div>
-                <h1 class="about-title">SKILLS</h1>
-                <div class="row">
-                    <div class="col-1">
-                    </div>
-                    <div class="col-6">
-                        <h1 class="title-school">HTML/CSS</h1>
-                        <h1 class="title-school">SQL</h1>
-                        <h1 class="title-school">JAVASCRIPT</h1>
-                        <h1 class="title-school">PHP</h1>
-                        <h1 class="title-school">JAVA</h1>
-                        <br>
-                    </div>
-                    <div class="col-5">
-                        <div class="skill-level-outer">
-                            <div class="skill-level-inner-1"></div>
-                        </div>
-                        <div class="skill-level-outer">
-                            <div class="skill-level-inner-2"></div>
-                        </div>
-                        <div class="skill-level-outer">
-                            <div class="skill-level-inner-3"></div>
-                        </div>
-                        <div class="skill-level-outer">
-                            <div class="skill-level-inner-4"></div>
-                        </div>
-                        <div class="skill-level-outer">
-                            <div class="skill-level-inner-5"></div>
-                        </div>
-                        <br>
-                    </div>
-                </div>
-                <h1 class="about-title">CERTIFICATIONS</h1>
-                <div class="row">
-                    <div class="col-1">
-                        <div class="round" id="round-vertically">
-                            <div class="circle" id="circle-star"><span>&bull;</span></div>
-                            <div class="circle-line-certifications"></div>
-                            <div class="circle" id="circle-key"><span>&bull;</span></div>
-                            <div class="circle-line-certifications"></div>
-                            <div class="circle" id="circle-cursor"><span>&bull;</span></div>
-                        </div>
-                    </div>
-                    <div class="col-11">
-                        <h1 class="title-school">Microsoft Excel Certification</h1>
-                        <h2 class="title-year">2021</h2>
-                        <h3 class="title-description-1">- Passed the Microsoft Office Specialist: Excel Associate
-                            (Office 2019) Exam.</h3>
-                        <button class="view-certification-button" type="submit"
-                            onclick="window.open('https://www.credly.com/badges/4697bcec-80bc-484d-b90c-f883a63c04b6?source=linked_in_profile','_blank')">VIEW
-                            CERTIFICATION</button>
-                        <br>
-                        <h1 class="title-school">Microsoft Powerpoint Certification</h1>
-                        <h2 class="title-year">2021</h2>
-                        <h3 class="title-description-1">- Passed the Microsoft Office Specialist: PowerPoint Associate
-                            (Office 2019) Exam.</h3>
-                        <button class="view-certification-button" type="submit"
-                            onclick="window.open('https://www.credly.com/badges/a0c83024-f9b1-4e50-830a-1a9b689355e2?source=linked_in_profile','_blank')">VIEW
-                            CERTIFICATION</button>
-                        <br>
-                        <h1 class="title-school">STEAM: Circuits and IOT with Arduino Intermediate Level</h1>
-                        <h2 class="title-year">2021</h2>
-                        <h3 class="title-description-1">- Completed and passed the subject.</h3>
-                        <button class="view-certification-button" type="submit"
-                            onclick="window.open('assets/files/sample_pdf_download.pdf')">VIEW CERTIFICATION</button>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1">
-            </div>
-        </div>
-
-
-        <!-- FOOTER/ BOTTOM NAVIGATION BAR -->
-        <div class="row bottom-nav">
-            <div class="col-1">
-            </div>
-            <div class="col-5">
-                <h1 id="footer-statement">Copyright © 2023 by Jacob Laurel. All Rights Reserved.</h1>
-            </div>
-            <div class="col-5">
-                <ul class="bottom-navbar-ul">
-                    <li class="bottom-navbar-li"><a href="https://github.com/bocyej" target="_blank"><img
-                                src="assets/photos/github-logo-outline.png" alt="Github Icon"
-                                class="social-media-icon"></a>
-                    </li>
-                    <li class="bottom-navbar-li"><a href="https://www.linkedin.com/in/laureljacob/" target="_blank"><img
-                                src="assets/photos/linkedin-logo-outline.png" alt="LinkedIn Icon"
-                                class="social-media-icon"></a>
-                    </li>
-                    <li class="bottom-navbar-li"><a href="https://twitter.com/bocyej" target="_blank"><img
-                                src="assets/photos/twitter-logo-outline.png" alt="Twitter Icon"
-                                class="social-media-icon"></a>
-                    </li>
-                    <li class="bottom-navbar-li"><a href="https://www.instagram.com/bocyej/" target="_blank"><img
-                                src="assets/photos/instagram-logo-outline.png" alt="Instagram Icon"
-                                class="social-media-icon"></a>
-                    </li>
-                    <li class="bottom-navbar-li"><a href="https://www.facebook.com/jacobkristopher.laurel"
-                            target="_blank"><img src="assets/photos/facebook-logo-outline.png" alt="Facebook Icon"
-                                class="social-media-icon"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-1">
-            </div>
-        </div>
-
-    </div>
 </body>
 
 </html>
