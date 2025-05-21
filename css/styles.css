@@ -224,6 +224,10 @@ h1 span {
     font-style: normal;
 }
 
+.to-projects a {
+    text-decoration: none;
+}
+
 @keyframes bounceRight {
 
     0%,
