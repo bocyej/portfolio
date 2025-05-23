@@ -244,7 +244,7 @@ h1 span {
     animation: bounceRight 0.6s ease;
 }
 
-#arrow{
+#arrow {
     margin: 0 0 0 5px;
 }
 
@@ -258,6 +258,80 @@ h1 span {
     margin: 0 25px 0 0;
 }
 
+/* ---ABOUT PAGE--- */
+.half-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    min-width: 50%;
+    width: 50%;
+    color: #E8E9EB;
+    text-decoration: none;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 35px;
+    padding: 100px 0;
+}
+
+.background-rectangle {
+    background-color: #4C5153;
+    border-radius: 15px;
+    min-width: 50%;
+    width: 50%;
+    padding: 50px;
+}
+
+.timeline-circle::before {
+    content: '';
+    background-color: #4C5153;
+    border: 3px solid #E8E9EB;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    left: -16px;
+    position: absolute;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-left: 2px solid #E8E9EB;
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-information {
+    margin: 0 0 0 25px;
+}
+
+.timeline-information h1 {
+    font-size: 35px;
+}
+
+.school{
+    margin: -7px 0 0 0;
+}
+
+.additional-information {
+    padding: 0 0 50px 0;
+}
+
+.margin-top{
+    margin-top: 100px;
+}
 
 /* ---FOOTER--- */
 footer {
@@ -265,9 +339,8 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    margin: 50px 0;
+    
+    padding: 50px 0;
     user-select: none;
     -webkit-user-drag: none;
 }
