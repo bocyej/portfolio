@@ -12,18 +12,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const headerLogo = document.getElementById("header-logo");
         const toggleThemeLogo = document.getElementById("toggle-theme-logo");
+        const header1 = document.querySelectorAll("h1");
+        const header2 = document.querySelectorAll("h2");
+        const header3 = document.querySelectorAll("h3");
+        const paragraphs = document.querySelectorAll("p");
+        const aTag = document.querySelectorAll("a");
+        const lists = document.querySelectorAll("li");
 
         headerLogo.src = isDarkTheme
-            ? "../assets/photos/logo-dark.png"
-            : "../assets/photos/logo-light.png";
+            ? "../assets/photos/logo-light.png"
+            : "../assets/photos/logo-dark.png";
 
         toggleThemeLogo.src = isDarkTheme
-            ? "../assets/photos/dark-mode.png"
-            : "../assets/photos/light-mode.png";
+            ? "../assets/photos/light-mode.png"
+            : "../assets/photos/dark-mode.png";
+
+        aTag.forEach(link => {
+            link.classList.toggle('dark-mode');
+            link.classList.toggle('light-mode');
+        });
+
+        paragraphs.forEach(link => {
+            link.classList.toggle('dark-mode');
+            link.classList.toggle('light-mode');
+        });
+
+        lists.forEach(link => {
+            link.classList.toggle('dark-mode');
+            link.classList.toggle('light-mode');
+        });
 
         const path = document.querySelectorAll(".icon-path");
         path.forEach(path => {
-            path.setAttribute("fill", isDarkTheme ? "#313638" : "#E8E9EB");
+            path.setAttribute("fill", isDarkTheme ? "#E8E9EB" : "#313638");
         });
     }
 
