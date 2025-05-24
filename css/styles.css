@@ -47,6 +47,11 @@ ul {
     color: #313638;
 }
 
+.dark-mode{
+    background-color: #313638;
+    color: #E8E9EB;
+}
+
 
 /* ---HEADER--- */
 header {
@@ -225,7 +230,7 @@ h1 span {
 }
 
 .to-projects p {
-    color: #E8E9EB;
+    /* color: #E8E9EB; */
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
