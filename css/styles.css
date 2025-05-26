@@ -116,6 +116,9 @@ nav a {
 
 .active {
     color: #E8E9EB !important;
+    border-bottom: #E8E9EB 4px solid;
+    padding: 0 10px 8px 10px;
+    width: 200%;
 }
 
 .header-logo {
