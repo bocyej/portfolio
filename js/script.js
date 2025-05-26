@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const aTag = document.querySelectorAll("a");
         const lists = document.querySelectorAll("li");
 
-        if (window.location.href.includes("/about") || window.location.href.includes("/contact")) {
+        if (window.location.href.includes("/about") || window.location.href.includes("/contact") || window.location.href.includes("/projects")) {
             headerLogo.src = isDarkTheme
                 ? "../assets/photos/logo-light.png"
                 : "../assets/photos/logo-dark.png";
