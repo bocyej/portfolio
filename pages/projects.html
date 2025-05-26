@@ -20,19 +20,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="no-scroll">
+<body class="no-scroll dark-mode">
     <header>
         <nav class="limited-width">
-            <a href="../index.html" class="active"><img src="../assets/photos/logo-light.png" alt="Logo" class="header-logo"></a>
+            <a href="../index.html">
+                <img id="header-logo" src="../assets/photos/logo-light.png" alt="Logo" class="header-logo">
+            </a>
             <a href="#" class="hamburger"><i class="fa fa-bars"></i></a>
             <ul>
-                <li><a href="about.html" class="underline active">// About</a></li>
-                <li><a href="contact.html" class="underline">// Contact</a></li>
+                <li><a href="about.html" class="nav-link underline light-mode">// About</a></li>
+                <li><a href="contact.html" class="nav-link underline light-mode">// Contact</a></li>
             </ul>
+            <a>
+                <div id="toggleThemeButton">
+                    <img id="toggle-theme-logo" src="../assets/photos/light-mode.png" alt="Toggle Theme" class="toggle-theme-logo">
+                </div>
+            </a>
         </nav>
     </header>
 
-    <main>
+    <main id="content">
         <section>
             <div class="limited-width">
                 <article>
