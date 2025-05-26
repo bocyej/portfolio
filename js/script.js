@@ -19,13 +19,23 @@ document.addEventListener("DOMContentLoaded", () => {
         const aTag = document.querySelectorAll("a");
         const lists = document.querySelectorAll("li");
 
-        headerLogo.src = isDarkTheme
-            ? "../assets/photos/logo-light.png"
-            : "../assets/photos/logo-dark.png";
+        if (window.location.href.includes("/about") || window.location.href.includes("/contact")) {
+            headerLogo.src = isDarkTheme
+                ? "../assets/photos/logo-light.png"
+                : "../assets/photos/logo-dark.png";
 
-        toggleThemeLogo.src = isDarkTheme
-            ? "../assets/photos/light-mode.png"
-            : "../assets/photos/dark-mode.png";
+            toggleThemeLogo.src = isDarkTheme
+                ? "../assets/photos/light-mode.png"
+                : "../assets/photos/dark-mode.png";
+        } else {
+            headerLogo.src = isDarkTheme
+                ? "assets/photos/logo-light.png"
+                : "assets/photos/logo-dark.png";
+
+            toggleThemeLogo.src = isDarkTheme
+                ? "assets/photos/light-mode.png"
+                : "assets/photos/dark-mode.png";
+        }
 
         aTag.forEach(link => {
             link.classList.toggle('dark-mode');
