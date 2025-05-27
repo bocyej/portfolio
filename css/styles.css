@@ -26,6 +26,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+::selection{
+    color: #FFD51E;
+}
+
 main {
     display: flex;
     flex-direction: column;
