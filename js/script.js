@@ -56,6 +56,33 @@ document.addEventListener("DOMContentLoaded", () => {
         path.forEach(path => {
             path.setAttribute("fill", isDarkTheme ? "#E8E9EB" : "#313638");
         });
+
+        const activeNavbarElement = document.querySelector(".active");
+        activeNavbarElement.style.borderBottom = isDarkTheme ? "#E8E9EB 4px solid" : "#313638 4px solid";
+
+        const backgroundRectangle = document.querySelector(".background-rectangle");
+        backgroundRectangle.style.backgroundColor = isDarkTheme ? "#4C5153" : "#E0DFD5";
+
+        const style = document.createElement('style');
+        if (isDarkTheme) {
+            style.innerHTML = `
+                .timeline-circle::before {
+                    background-color: #4C5153 !important;
+                    border: 3px solid #E8E9EB;
+                }
+            `;
+        } else {
+            style.innerHTML = `
+                .timeline-circle::before {
+                    background-color: #E0DFD5 !important;
+                    border: 3px solid #313638;
+                }
+            `;
+        }
+        document.head.appendChild(style);
+
+        const timeline = document.querySelector(".timeline");
+        timeline.style.borderLeft = isDarkTheme ? "2px solid #E8E9EB" : "2px solid #313638";
     }
 
     toggleThemeButton.addEventListener("click", () => {
