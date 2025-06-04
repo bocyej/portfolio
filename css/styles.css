@@ -47,13 +47,13 @@ ul {
 }
 
 .light-mode {
-    background-color: #E8E9EB;
-    color: #313638;
+    background-color: #E8E9EB !important;
+    color: #313638 !important;
 }
 
 .dark-mode{
-    background-color: #313638;
-    color: #E8E9EB;
+    background-color: #313638 !important;
+    color: #E8E9EB !important;
 }
 
 
@@ -119,7 +119,7 @@ nav a {
 }
 
 .active {
-    color: #E8E9EB !important;
+    color: #E8E9EB;
     border-bottom: #E8E9EB 4px solid;
     padding: 0 10px 8px 10px;
     width: 200%;
