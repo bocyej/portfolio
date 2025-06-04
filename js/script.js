@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const aTag = document.querySelectorAll("a");
         const lists = document.querySelectorAll("li");
 
-        const path = document.querySelectorAll(".icon-path");
+        const iconPath = document.getElementsByClassName(".icon-path");
 
         if (window.location.href.includes("/about") || window.location.href.includes("/contact") || window.location.href.includes("/projects")) {
             headerLogo.src = isDarkTheme
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const timeline = document.querySelector(".timeline");
         timeline.style.borderLeft = isDarkTheme ? "2px solid #E8E9EB" : "2px solid #313638";
 
-        path.forEach(path => {
+        iconPath.forEach(path => {
             path.setAttribute("fill", isDarkTheme ? "#E8E9EB" : "#313638");
         });
 
