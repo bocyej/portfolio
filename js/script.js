@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const projectCard = document.querySelectorAll(".project-card");
         const cardHover = document.querySelectorAll(".card-hover");
         const cardText = document.querySelectorAll(".card-text");
+        const toolsAndLanguages = document.querySelectorAll(".tools-or-languages");
 
         if (isDarkTheme) {
             aTag.forEach(link => {
@@ -67,6 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
             cardText.forEach(link => {
                 link.classList.remove('card-description-color-light');
                 link.classList.add('card-description-color-dark');
+            });
+
+            toolsAndLanguages.forEach(link => {
+                link.style.border = "#313638 1px solid"
             });
 
             style.innerHTML = `
@@ -98,6 +103,10 @@ document.addEventListener("DOMContentLoaded", () => {
             cardText.forEach(link => {
                 link.classList.add('card-description-color-light');
                 link.classList.remove('card-description-color-dark');
+            });
+
+            toolsAndLanguages.forEach(link => {
+                link.style.border = "#E8E9EB 1px solid"
             });
 
             style.innerHTML = `
