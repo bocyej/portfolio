@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const aTag = document.querySelectorAll("a");
         const lists = document.querySelectorAll("li");
 
+        const path = document.querySelectorAll(".icon-path");
+
         if (window.location.href.includes("/about") || window.location.href.includes("/contact") || window.location.href.includes("/projects")) {
             headerLogo.src = isDarkTheme
                 ? "../assets/photos/logo-light.png"
@@ -37,30 +39,63 @@ document.addEventListener("DOMContentLoaded", () => {
                 : "assets/photos/dark-mode.png";
         }
 
-        aTag.forEach(link => {
-            link.classList.toggle('dark-mode');
-            link.classList.toggle('light-mode');
-        });
+        const activeNavbarElement = document.querySelector(".active");
+        activeNavbarElement.style.borderBottom = isDarkTheme ? "#E8E9EB 4px solid" : "#313638 4px solid";
 
-        paragraphs.forEach(link => {
-            link.classList.toggle('dark-mode');
-            link.classList.toggle('light-mode');
-        });
+        const backgroundRectangle = document.querySelector(".background-rectangle");
+        backgroundRectangle.style.backgroundColor = isDarkTheme ? "#4C5153" : "#E0DFD5";
 
-        lists.forEach(link => {
-            link.classList.toggle('dark-mode');
-            link.classList.toggle('light-mode');
-        });
+        const style = document.createElement('style');
 
-        const path = document.querySelectorAll(".icon-path");
+        if (isDarkTheme) {
+            aTag.forEach(link => {
+                link.classList.remove('light-mode');
+                link.classList.add('dark-mode');
+            });
+
+            paragraphs.forEach(link => {
+                link.classList.remove('light-mode');
+                link.classList.add('dark-mode');
+            });
+
+            style.innerHTML = `
+                .timeline-circle::before {
+                    background-color: #4C5153 !important;
+                    border: 3px solid #E8E9EB;
+                }
+            `;
+        } else {
+            aTag.forEach(link => {
+                link.classList.add('light-mode');
+                link.classList.remove('dark-mode');
+            });
+
+            paragraphs.forEach(link => {
+                link.classList.add('light-mode');
+                link.classList.remove('dark-mode');
+            });
+
+            style.innerHTML = `
+                .timeline-circle::before {
+                    background-color: #E0DFD5 !important;
+                    border: 3px solid #313638;
+                }
+            `;
+        }
+        document.head.appendChild(style);
+
+        const timeline = document.querySelector(".timeline");
+        timeline.style.borderLeft = isDarkTheme ? "2px solid #E8E9EB" : "2px solid #313638";
+
         path.forEach(path => {
             path.setAttribute("fill", isDarkTheme ? "#E8E9EB" : "#313638");
         });
+
     }
 
     toggleThemeButton.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
         document.body.classList.toggle("light-mode");
+        document.body.classList.toggle("dark-mode");
         switchTheme();
     });
 
