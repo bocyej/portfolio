@@ -429,6 +429,14 @@ h1 span {
     -moz-box-shadow: -1px 0px 50px 6px rgba(0, 0, 0, 0.5); */
 }
 
+.card-light{
+    background-color: #E8E9EB;
+}
+
+.card-dark{
+    background-color: #313638;
+}
+
 .project-preview-image {
     border-radius: 5px;
     width: 100%;

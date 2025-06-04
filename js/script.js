@@ -40,7 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const style = document.createElement('style');
 
-        const projectCard = document.querySelectorAll(".card-text");
+        const projectCard = document.querySelectorAll(".project-card");
+        const cardHover = document.querySelectorAll(".card-hover");
+        const cardText = document.querySelectorAll(".card-text");
 
         if (isDarkTheme) {
             aTag.forEach(link => {
@@ -54,6 +56,15 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             projectCard.forEach(link => {
+                link.classList.remove('card-dark');
+                link.classList.add('card-light');
+            });
+
+            cardHover.forEach(link => {
+                link.style.backgroundColor = "rgba(255, 255, 255, 0.7)"
+            });
+
+            cardText.forEach(link => {
                 link.classList.remove('card-description-color-light');
                 link.classList.add('card-description-color-dark');
             });
@@ -76,6 +87,15 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             projectCard.forEach(link => {
+                link.classList.add('card-dark');
+                link.classList.remove('card-light');
+            });
+
+            cardHover.forEach(link => {
+                link.style.backgroundColor = "rgba(0, 0, 0, 0.3)"
+            });
+
+            cardText.forEach(link => {
                 link.classList.add('card-description-color-light');
                 link.classList.remove('card-description-color-dark');
             });
@@ -139,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Right Arrow Bouncing
     const arrow = document.getElementById("arrow");
-    
+
     if (arrow) {
         setInterval(() => {
             arrow.classList.remove("bounce");
