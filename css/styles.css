@@ -18,7 +18,7 @@ body {
     color: #E8E9EB;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -51,7 +51,7 @@ ul {
     color: #313638 !important;
 }
 
-.dark-mode{
+.dark-mode {
     background-color: #313638 !important;
     color: #E8E9EB !important;
 }
@@ -147,6 +147,8 @@ h1 span {
     color: #FFD51E;
 }
 
+
+/* BODY */
 .introduction {
     min-height: calc(61dvh);
     display: flex;
@@ -237,7 +239,7 @@ h1 span {
 }
 
 .to-projects p {
-    /* color: #E8E9EB; */
+    color: #E8E9EB;
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
@@ -279,6 +281,14 @@ h1 span {
     margin: 0 25px 0 0;
 }
 
+.icon-path {
+    fill: #313638;
+}
+
+.dark-mode .icon-path {
+    fill: #E8E9EB;
+}
+
 /* ---ABOUT PAGE--- */
 .half-screen {
     display: flex;
@@ -300,7 +310,6 @@ h1 span {
 }
 
 .background-rectangle {
-    background-color: #4C5153;
     border-radius: 15px;
     min-width: 50%;
     width: 50%;
@@ -313,7 +322,7 @@ h1 span {
 
 .timeline-circle::before {
     content: '';
-    background-color: #4C5153;
+    background-color: #313638;
     border: 3px solid #E8E9EB;
     border-radius: 50%;
     -moz-border-radius: 50%;
@@ -352,12 +361,13 @@ h1 span {
     align-items: center;
 }
 
-.title-and-year h4{
+.title-and-year h4 {
     font-weight: 500;
+    padding: 0 0 0 10px;
 }
 
 .view-button {
-    font-weight: 400;
+    font-weight: 500;
     margin: 5px 0 0 0;
 }
 
@@ -367,6 +377,129 @@ h1 span {
 
 .margin-top {
     margin-top: 100px;
+}
+
+
+/* PROJECTS */
+#title {
+    width: 100%;
+    text-decoration: none;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 35px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects-list {
+    margin: 50px 0;
+}
+
+#projects-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#projects-list ul li {
+    width: max-content;
+}
+
+.project-card {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    min-width: 30%;
+    width: 30%;
+    max-width: 30%;
+    padding: 10px;
+    margin: 12px 10px;
+    background-color: #E8E9EB;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: -1px 0px 50px 6px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: -1px 0px 50px 6px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: -1px 0px 50px 6px rgba(255, 255, 255, 0.1);
+    /* box-shadow: -1px 0px 50px 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -1px 0px 50px 6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px 0px 50px 6px rgba(0, 0, 0, 0.5); */
+}
+
+.project-preview-image {
+    border-radius: 5px;
+    width: 100%;
+    min-width: 100%;
+}
+
+.project-title {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.default-view {
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.project-card:hover .default-view {
+    filter: blur(4px);
+    opacity: 0.6;
+}
+
+.card-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .card-hover {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+.card-hover p {
+    margin: 10px 0;
+}
+
+#projects-list .tools-or-languages-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.tools-or-languages{
+    border: #313638 1px solid;
+    border-radius: 100px;
+    padding: 3px 7px;
+    margin: 5px 3px 0 0;
+    font-weight: 500;
+}
+
+.card-description-color-light {
+    background-color: transparent !important;
+    color: #E8E9EB !important;
+}
+
+.card-description-color-dark {
+    background-color: transparent !important;
+    color: #313638 !important;
 }
 
 /* ---FOOTER--- */
