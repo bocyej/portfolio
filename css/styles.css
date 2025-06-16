@@ -8,7 +8,6 @@
 
 html,
 body {
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -164,12 +163,16 @@ body.modal-open {
 #mobile-nav-modal {
     position: fixed;
     inset: 0;
-    background-color: rgba(39, 52, 56, 0.5);
-    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.7);
     display: none;
     justify-content: center;
     align-items: center;
     z-index: 9999;
+}
+
+body.modal-open #content,
+body.modal-open header {
+    filter: blur(5px);
 }
 
 .modal-content {
