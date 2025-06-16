@@ -88,8 +88,26 @@
         font-size: 25px;
     }
 
+    .close-icon{
+        color: #E8E9EB !important;
+        display: block;
+        margin: 0 0 5px 0;
+        font-size: 35px !important;
+    }
+
     h1 span {
         color: #FFD51E;
+    }
+
+    .underline:hover::after {
+        width: 110%;
+    }
+
+    .active {
+        color: #E8E9EB;
+        border-bottom: #E8E9EB 3px solid;
+        padding: 0 10px 5px 10px;
+        width: 200%;
     }
 
     /* ---BODY--- */
