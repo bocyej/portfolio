@@ -27,7 +27,7 @@
             <a href="index.html">
                 <img id="header-logo" src="assets/photos/logo-light.png" alt="Logo" class="header-logo">
             </a>
-            <a href="#" class="hamburger"><i class="fa fa-bars"></i></a>
+            <a href="#" onclick="showMobileNavModal(); return false;" class="hamburger"><i class="fa fa-bars"></i></a>
             <ul>
                 <li><a href="pages/about.html" class="nav-link underline">// About</a></li>
                 <li><a href="pages/projects.html" class="nav-link underline">// Projects</a></li>
@@ -40,6 +40,17 @@
             </a>
         </nav>
     </header>
+
+    <div id="mobile-nav-modal">
+        <div class="modal-content">
+            <a href="#" onclick="hideMobileNavModal(); return false;" class="close-icon"><i class="fa fa-times"></i></a>
+            <ul>
+                <li><a href="pages/about.html" class="nav-link underline">// About</a></li>
+                <li><a href="pages/projects.html" class="nav-link underline">// Projects</a></li>
+                <li><a href="pages/contact.html" class="nav-link underline">// Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
     <main id="content">
         <section class="introduction">
