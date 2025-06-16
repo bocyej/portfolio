@@ -181,3 +181,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ensure dark theme is selected on page load
     switchTheme();
 });
+
+// Display Mobile Top Nav Modal
+function showMobileNavModal() {
+    document.getElementById("mobile-nav-modal").style.display = "flex";
+    document.body.classList.add("modal-open");
+}
+
+// Hide Mobile Top Nav Modal
+function hideMobileNavModal() {
+    document.getElementById("mobile-nav-modal").style.display = "none";
+    document.body.classList.remove("modal-open");
+}
