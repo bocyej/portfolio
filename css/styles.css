@@ -165,7 +165,7 @@ body.modal-open {
     position: fixed;
     inset: 0;
     background-color: rgba(39, 52, 56, 0.5);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(50px);
     display: none;
     justify-content: center;
     align-items: center;
