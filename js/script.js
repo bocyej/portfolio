@@ -15,20 +15,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (window.location.href.includes("/about") || window.location.href.includes("/contact") || window.location.href.includes("/projects")) {
             headerLogo.src = isDarkTheme
-                ? "../assets/photos/logo-light.png"
-                : "../assets/photos/logo-dark.png";
+                ? "/assets/photos/logo-light.png"
+                : "/assets/photos/logo-dark.png";
 
             toggleThemeLogo.src = isDarkTheme
-                ? "../assets/photos/light-mode.png"
-                : "../assets/photos/dark-mode.png";
+                ? "/assets/photos/light-mode.png"
+                : "/assets/photos/dark-mode.png";
         } else {
             headerLogo.src = isDarkTheme
-                ? "assets/photos/logo-light.png"
-                : "assets/photos/logo-dark.png";
+                ? "/assets/photos/logo-light.png"
+                : "/assets/photos/logo-dark.png";
 
             toggleThemeLogo.src = isDarkTheme
-                ? "assets/photos/light-mode.png"
-                : "assets/photos/dark-mode.png";
+                ? "/assets/photos/light-mode.png"
+                : "/assets/photos/dark-mode.png";
         }
 
         const header1 = document.querySelectorAll("h1");
@@ -117,10 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
         }
         document.head.appendChild(style);
-
-        const activeNavbarElement = document.querySelector(".active");
-        activeNavbarElement.style.borderBottom = isDarkTheme ? "#E8E9EB 4px solid" : "#313638 4px solid";
-
+        
         // const backgroundRectangle = document.querySelector(".background-rectangle");
         // backgroundRectangle.style.backgroundColor = isDarkTheme ? "#4C5153" : "#E0DFD5";
 
