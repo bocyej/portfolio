@@ -111,6 +111,11 @@ nav ul li a {
     transition: width .2s;
 }
 
+body.light-mode .underline::after {
+    background-color: #313638;
+}
+
+
 .underline:hover::after {
     width: 120%;
 }
@@ -127,11 +132,17 @@ nav a {
     width: 200%;
 }
 
+body.light-mode .active {
+    color: #313638;
+    border-bottom: #313638 4px solid;
+}
+
 .header-logo {
     max-height: 2.5rem;
 }
 
 .toggle-theme-logo {
+    cursor: pointer;
     max-height: 2.5rem;
 }
 
