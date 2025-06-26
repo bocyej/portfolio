@@ -1,12 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const mainContent = document.getElementById("content");
 
-    function normalizeUrl(url) {
-        const u = new URL(url, window.location.origin);
-        const pathname = u.pathname;
-        return (pathname === "/" || pathname === "/index.html") ? "/" : pathname;
-    }
-
+    const normalizeUrl = (url) => new URL(url, window.location.origin).pathname;
 
     function setActiveLink(url) {
         document.querySelectorAll(".nav-link").forEach(link => {
@@ -23,16 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function loadPage(url, addToHistory = true) {
         const targetPath = normalizeUrl(url);
-        const currentPath = normalizeUrl(location.pathname);
-
         // Prevent same page reload
-        if (currentPath === targetPath) return;
-
-        const fetchPath = targetPath === "/" ? "/index.html" : targetPath;
-
-        fetch(fetchPath)
+        if (normalizeUrl(location.pathname) === targetPath) return;
+        fetch(url)
             .then(response => {
-                if (!response.ok) throw new Error(`Failed to fetch ${fetchPath}`);
+                if (!response.ok) throw new Error(`Failed to fetch ${url}`);
                 return response.text();
             })
             .then(html => {
@@ -40,16 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 const doc = parser.parseFromString(html, "text/html");
                 const newContent = doc.querySelector("main")?.innerHTML;
                 if (newContent) {
-                    document.getElementById("content").innerHTML = newContent;
-
+                    mainContent.innerHTML = newContent;
                     if (addToHistory) {
-                        history.pushState({ url: "/" }, "", "/");
+                        history.pushState({ url }, "", url);
                     }
-
                     window.scrollTo(0, 0);
-                    setActiveLink(targetPath);
+
+                    setActiveLink(url);
                     bindDynamicEvents();
-                    applyStoredTheme();
                 } else {
                     throw new Error("Main content not found in new page.");
                 }
