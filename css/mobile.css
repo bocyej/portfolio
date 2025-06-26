@@ -88,7 +88,7 @@
         font-size: 25px;
     }
 
-    .close-icon{
+    .close-icon {
         color: #E8E9EB !important;
         display: block;
         margin: 0 0 5px 0;
@@ -111,6 +111,10 @@
     }
 
     /* ---BODY--- */
+    main{
+        margin: 0 0 50px 0;
+    }
+
     .introduction-description h1,
     .introduction-description p {
         width: 100%;
@@ -184,6 +188,111 @@
 
     .margin-top {
         margin-top: 100px;
+    }
+
+
+    /* ---PROJECTS PAGE--- */
+    #title {
+        width: 100%;
+        text-decoration: none;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 35px;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projects-list {
+        margin: 10px 0;
+    }
+
+    #projects-list ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #projects-list ul li {
+        width: max-content;
+    }
+
+    .project-card {
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .project-title {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .default-view {
+        transition: filter 0.3s ease, opacity 0.3s ease;
+    }
+
+    .project-card:hover .default-view {
+        filter: blur(4px);
+        opacity: 0.6;
+    }
+
+    .card-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .project-card:hover .card-hover {
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 2;
+    }
+
+    .card-hover p {
+        margin: 10px 0;
+    }
+
+    #projects-list .tools-or-languages-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .tools-or-languages {
+        border: #313638 1px solid;
+        border-radius: 100px;
+        padding: 3px 7px;
+        margin: 5px 3px 0 0;
+        font-weight: 500;
+    }
+
+    .card-description-color-light {
+        background-color: transparent !important;
+        color: #E8E9EB !important;
+    }
+
+    .card-description-color-dark {
+        background-color: transparent !important;
+        color: #313638 !important;
     }
 
 
