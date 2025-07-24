@@ -274,6 +274,19 @@ body.modal-open header {
     font-size: 2.275em;
 }
 
+body.light-mode .sparkle {
+    position: relative;
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: bold;
+    animation: shimmer 5s infinite;
+    background: linear-gradient(90deg, #313638, #FFD51E, #313638);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .sparkle {
     position: relative;
     display: inline-block;
