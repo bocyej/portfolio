@@ -1,35 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    window.addEventListener("load", () => {
+        document.body.classList.add("theme-transition");
+    });
+
+
     // Toggle Theme Switch
     const toggleThemeButton = document.getElementById("toggleThemeButton");
+
+    function isLightThemeActive() {
+        return document.body.classList.contains("light-mode");
+    }
 
     function isDarkThemeActive() {
         return document.body.classList.contains("dark-mode");
     }
 
     function switchTheme() {
+        const isLightTheme = isLightThemeActive();
         const isDarkTheme = isDarkThemeActive();
 
         const headerLogo = document.getElementById("header-logo");
         const toggleThemeLogo = document.getElementById("toggle-theme-logo");
 
-        if (window.location.href.includes("/about") || window.location.href.includes("/contact") || window.location.href.includes("/projects")) {
-            headerLogo.src = isDarkTheme
-                ? "/assets/photos/logo-light.png"
-                : "/assets/photos/logo-dark.png";
+        headerLogo.src = isLightTheme
+            ? "/assets/photos/logo-dark.png"
+            : "/assets/photos/logo-light.png";
 
-            toggleThemeLogo.src = isDarkTheme
-                ? "/assets/photos/light-mode.png"
-                : "/assets/photos/dark-mode.png";
-        } else {
-            headerLogo.src = isDarkTheme
-                ? "/assets/photos/logo-light.png"
-                : "/assets/photos/logo-dark.png";
-
-            toggleThemeLogo.src = isDarkTheme
-                ? "/assets/photos/light-mode.png"
-                : "/assets/photos/dark-mode.png";
-        }
+        toggleThemeLogo.src = isLightTheme
+            ? "/assets/photos/dark-mode.png"
+            : "/assets/photos/light-mode.png";
 
         const header1 = document.querySelectorAll("h1");
         const header2 = document.querySelectorAll("h2");
@@ -45,50 +45,18 @@ document.addEventListener("DOMContentLoaded", () => {
         const cardText = document.querySelectorAll(".card-text");
         const toolsAndLanguages = document.querySelectorAll(".tools-or-languages");
 
-        if (isDarkTheme) {
+        const timeline = document.getElementById("timeline");
+        const timelineCircle = document.getElementById("timeline-circle");
+
+        if (isLightTheme) {
             aTag.forEach(link => {
-                link.classList.remove('light-mode');
-                link.classList.add('dark-mode');
+                link.classList.add('dark-text');
+                link.classList.remove('light-text');
             });
 
             paragraphs.forEach(link => {
-                link.classList.remove('light-mode');
-                link.classList.add('dark-mode');
-            });
-
-            projectCard.forEach(link => {
-                link.classList.remove('card-dark');
-                link.classList.add('card-light');
-            });
-
-            cardHover.forEach(link => {
-                link.style.backgroundColor = "rgba(255, 255, 255, 0.7)"
-            });
-
-            cardText.forEach(link => {
-                link.classList.remove('card-description-color-light');
-                link.classList.add('card-description-color-dark');
-            });
-
-            toolsAndLanguages.forEach(link => {
-                link.style.border = "#313638 1px solid"
-            });
-
-            style.innerHTML = `
-                .timeline-circle::before {
-                    background-color: #313638 !important;
-                    border: 3px solid #E8E9EB;
-                }
-            `;
-        } else {
-            aTag.forEach(link => {
-                link.classList.add('light-mode');
-                link.classList.remove('dark-mode');
-            });
-
-            paragraphs.forEach(link => {
-                link.classList.add('light-mode');
-                link.classList.remove('dark-mode');
+                link.classList.add('dark-text');
+                link.classList.remove('light-text');
             });
 
             projectCard.forEach(link => {
@@ -109,23 +77,53 @@ document.addEventListener("DOMContentLoaded", () => {
                 link.style.border = "#E8E9EB 1px solid"
             });
 
-            style.innerHTML = `
-                .timeline-circle::before {
-                    background-color: #E8E9EB !important;
-                    border: 3px solid #313638;
-                }
-            `;
+            if (timeline) {
+                document.documentElement.style.setProperty("--timeline-border-left", "2px solid #E8E9EB");
+            }
+
+            if (timelineCircle) {
+                document.documentElement.style.setProperty("--timeline-circle-background", "#313638 !important");
+                document.documentElement.style.setProperty("--timeline-circle-border", "3px solid #E8E9EB");
+            }
+        } else if (isDarkTheme) {
+            aTag.forEach(link => {
+                link.classList.remove('dark-text');
+                link.classList.add('light-text');
+            });
+
+            paragraphs.forEach(link => {
+                link.classList.remove('dark-text');
+                link.classList.add('light-text');
+            });
+
+            projectCard.forEach(link => {
+                link.classList.remove('card-dark');
+                link.classList.add('card-light');
+            });
+
+            cardHover.forEach(link => {
+                link.style.backgroundColor = "rgba(255, 255, 255, 0.7)"
+            });
+
+            cardText.forEach(link => {
+                link.classList.remove('card-description-color-light');
+                link.classList.add('card-description-color-dark');
+            });
+
+            toolsAndLanguages.forEach(link => {
+                link.style.border = "#313638 1px solid"
+            });
+
+            if (timeline) {
+                timeline.style.setProperty("--timeline-border-left", "2px solid #313638");
+            }
+
+            if (timelineCircle) {
+                document.documentElement.style.setProperty("--timeline-circle-background", "#E8E9EB !important");
+                document.documentElement.style.setProperty("--timeline-circle-border", "3px solid #313638");
+            }
         }
         document.head.appendChild(style);
-        
-        // const backgroundRectangle = document.querySelector(".background-rectangle");
-        // backgroundRectangle.style.backgroundColor = isDarkTheme ? "#4C5153" : "#E0DFD5";
-
-        const timeline = document.querySelector(".timeline");
-
-        if (timeline) {
-            timeline.style.borderLeft = isDarkTheme ? "2px solid #E8E9EB" : "2px solid #313638";
-        }
     }
 
     toggleThemeButton.addEventListener("click", () => {
