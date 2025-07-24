@@ -19,6 +19,11 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    transition: none;
+}
+
+body.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body::-webkit-scrollbar {
@@ -27,6 +32,12 @@ body::-webkit-scrollbar {
 
 ::selection {
     color: #FFD51E;
+}
+
+:root {
+    --timeline-border-left: 2px solid #313638;
+    --timeline-circle-background: #E8E9EB !important;
+    --timeline-circle-border: 3px solid #313638;
 }
 
 main {
@@ -58,6 +69,14 @@ ul {
     color: #E8E9EB !important;
 }
 
+.light-text {
+    color: #E8E9EB !important;
+}
+
+.dark-text {
+    color: #313638 !important;
+}
+
 
 /* ---HEADER--- */
 header {
@@ -85,7 +104,9 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+/* nav ul li a {} */
+
+.nav-link {
     color: #E8E9EB;
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
@@ -400,8 +421,8 @@ body.modal-open header {
 
 .timeline-circle::before {
     content: '';
-    background-color: #313638;
-    border: 3px solid #E8E9EB;
+    background-color: var(--timeline-circle-background);
+    border: var(--timeline-circle-border);
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -418,7 +439,7 @@ body.modal-open header {
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    border-left: 2px solid #E8E9EB;
+    border-left: var(--timeline-border-left);
     height: auto;
     width: 100%;
     position: relative;
@@ -480,7 +501,7 @@ body.modal-open header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:flex-start;
 }
 
 #projects-list ul li {
@@ -495,7 +516,7 @@ body.modal-open header {
     width: 30%;
     max-width: 30%;
     padding: 10px;
-    margin: 20px 0;
+    margin: 20px;
     background-color: #E8E9EB;
     overflow: hidden;
     cursor: pointer;
