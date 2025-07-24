@@ -8,6 +8,14 @@
         width: 100dvw;
     }
 
+    .light-text {
+        color: #E8E9EB !important;
+    }
+
+    .dark-text {
+        color: #313638 !important;
+    }
+
     /* ---HEADER--- */
     header {
         background-color: inherit;
@@ -81,8 +89,18 @@
         display: none;
     }
 
-    .hamburger {
+    .toggle-theme-logo-modal {
+        max-height: 2.5em;
+        height: 2.5em;
+        width: auto;
+    }
+
+    .modal-content ul li a {
         color: #E8E9EB !important;
+    }
+
+    .hamburger {
+        color: #E8E9EB;
         display: block;
         margin: 0 0 5px 0;
         font-size: 25px;
@@ -101,6 +119,13 @@
 
     .underline:hover::after {
         width: 110%;
+    }
+
+    .light-mode .active {
+        color: #E8E9EB;
+        border-bottom: #E8E9EB 3px solid !important;
+        padding: 0 10px 5px 10px;
+        width: 200%;
     }
 
     .active {
@@ -125,7 +150,6 @@
         align-items: center;
         width: 100dvw;
         padding: 0 25px;
-        background-color: #313638;
     }
 
     .social-media {
@@ -298,7 +322,7 @@
         position: fixed;
         bottom: 0;
         margin: 0;
-        background-color: #313638;
+        background-color: var(--timeline-circle-background);
         padding: 15px 0;
         z-index: 100;
     }
@@ -324,6 +348,14 @@
         height: 100vh;
         height: 100dvh;
         width: 100dvw;
+    }
+
+    .light-text {
+        color: #E8E9EB !important;
+    }
+
+    .dark-text {
+        color: #313638 !important;
     }
 
     /* ---HEADER--- */
@@ -399,8 +431,18 @@
         display: none;
     }
 
-    .hamburger {
+    .toggle-theme-logo-modal {
+        max-height: 2.5em;
+        height: 2.5em;
+        width: auto;
+    }
+
+    .modal-content ul li a {
         color: #E8E9EB !important;
+    }
+
+    .hamburger {
+        color: #E8E9EB;
         display: block;
         margin: 0 0 5px 0;
         font-size: 25px;
@@ -443,7 +485,6 @@
         align-items: center;
         width: 100dvw;
         padding: 0 25px;
-        background-color: #313638;
     }
 
     .social-media {
@@ -616,7 +657,7 @@
         position: fixed;
         bottom: 0;
         margin: 0;
-        background-color: #313638;
+        background-color: var(--timeline-circle-background);
         padding: 15px 0;
         z-index: 100;
     }

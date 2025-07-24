@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Toggle Theme Switch
     const toggleThemeButton = document.getElementById("toggleThemeButton");
+    const toggleThemeButtonModal = document.getElementById("toggleThemeButtonModal");
 
     function isLightThemeActive() {
         return document.body.classList.contains("light-mode");
@@ -110,6 +111,13 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.toggle("dark-mode");
         switchTheme();
     });
+
+    toggleThemeButtonModal.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+        document.body.classList.toggle("dark-mode");
+        switchTheme();
+    });
+
 
 
     // Entry for each word
