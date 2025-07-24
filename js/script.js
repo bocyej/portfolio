@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const toggleThemeLogo = document.getElementById("toggle-theme-logo");
 
         headerLogo.src = isLightTheme
-            ? "/assets/photos/logo-dark.png"
-            : "/assets/photos/logo-light.png";
+            ? "assets/photos/logo-dark.png"
+            : "assets/photos/logo-light.png";
 
         toggleThemeLogo.src = isLightTheme
-            ? "/assets/photos/dark-mode.png"
-            : "/assets/photos/light-mode.png";
+            ? "assets/photos/dark-mode.png"
+            : "assets/photos/light-mode.png";
 
         const header1 = document.querySelectorAll("h1");
         const header2 = document.querySelectorAll("h2");
