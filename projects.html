@@ -8,16 +8,33 @@
 
     <!-- <link rel="icon" type="image/icon" href="images/favicon.png"> -->
     <title>J.Laurel | Portfolio</title>
-    <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/mobile.css">
-    <script src="../js/script.js"></script>
+    <script>
+        (function () {
+            const theme = localStorage.getItem("theme") || "dark";
+            
+            const applyTheme = () => {
+                if (document.body) {
+                    document.body.classList.add(theme === "light" ? "light-mode" : "dark-mode");
+                } else {
+                    requestAnimationFrame(applyTheme);
+                }
+            };
+
+            applyTheme();
+        })();
+    </script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/asynchronous.js"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -25,17 +42,17 @@
     <header>
         <nav class="limited-width">
             <a href="/">
-                <img id="header-logo" src="../assets/photos/logo-light.png" alt="Logo" class="header-logo">
+                <img id="header-logo" src="assets/photos/logo-light.png" alt="Logo" class="header-logo">
             </a>
             <a href="#" onclick="showMobileNavModal(); return false;" class="hamburger"><i class="fa fa-bars"></i></a>
             <ul>
-                <li><a href="/pages/about.html" class="nav-link underline">// About</a></li>
-                <li><a href="/pages/projects.html" class="nav-link active">// Projects</a></li>
-                <li><a href="/pages/contact.html" class="nav-link underline">// Contact</a></li>
+                <li><a href="/about.html" class="nav-link underline">// About</a></li>
+                <li><a href="/projects.html" class="nav-link active">// Projects</a></li>
+                <li><a href="/contact.html" class="nav-link underline">// Contact</a></li>
             </ul>
             <a id="themeButton">
                 <div id="toggleThemeButton">
-                    <img id="toggle-theme-logo" src="../assets/photos/light-mode.png" alt="Toggle Theme"
+                    <img id="toggle-theme-logo" src="assets/photos/light-mode.png" alt="Toggle Theme"
                         class="toggle-theme-logo">
                 </div>
             </a>
@@ -46,9 +63,9 @@
         <div class="modal-content">
             <a href="#" onclick="hideMobileNavModal(); return false;" class="close-icon"><i class="fa fa-times"></i></a>
             <ul>
-                <li><a href="/pages/about.html">// About</a></li>
-                <li><a href="/pages/projects.html" class="active">// Projects</a></li>
-                <li><a href="/pages/contact.html">// Contact</a></li>
+                <li><a href="/about.html">// About</a></li>
+                <li><a href="/projects.html" class="active">// Projects</a></li>
+                <li><a href="/contact.html">// Contact</a></li>
             </ul>
         </div>
     </div>
@@ -61,7 +78,45 @@
                     <ul>
                         <div class="project-card">
                             <div class="default-view">
-                                <img src="../assets/photos/prioritize-thumbnail.png" alt="Project Preview Image"
+                                <img src="assets/photos/vital-monitor-thumbnail.png" alt="Project Preview Image"
+                                    class="project-preview-image">
+                                <h2 class="project-title card-text">Vital Monitor</h2>
+                            </div>
+                            <a href="#" target="_blank">
+                                <div class="card-hover">
+                                    <h3 class="card-text">Vital Monitor</h3>
+                                    <p class="card-text">A straightforward, offline-ready application that focuses on tracking your vitals and generate shareable summaries that you can forward to your doctor.</p>
+                                    <ul class="tools-or-languages-list">
+                                        <li class="tools-or-languages card-text">Flutter</li>
+                                        <li class="tools-or-languages card-text">Supabase</li>
+                                        <li class="tools-or-languages card-text">Android</li>
+                                        <li class="tools-or-languages card-text">iOS</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <div class="default-view">
+                                <img src="assets/photos/arkibo-thumnail.png" alt="Project Preview Image"
+                                    class="project-preview-image">
+                                <h2 class="project-title card-text">Arkibo</h2>
+                            </div>
+                            <a href="#" target="_blank">
+                                <div class="card-hover">
+                                    <h3 class="card-text">Arkibo</h3>
+                                    <p class="card-text">Social networking platform with modern user interface.</p>
+                                    <ul class="tools-or-languages-list">
+                                        <li class="tools-or-languages card-text">Flutter</li>
+                                        <li class="tools-or-languages card-text">Supabase</li>
+                                        <li class="tools-or-languages card-text">Android</li>
+                                        <li class="tools-or-languages card-text">iOS</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <div class="default-view">
+                                <img src="assets/photos/prioritize-thumbnail.png" alt="Project Preview Image"
                                     class="project-preview-image">
                                 <h2 class="project-title card-text">Prioritize</h2>
                             </div>
@@ -81,7 +136,7 @@
                         </div>
                         <div class="project-card">
                             <div class="default-view">
-                                <img src="../assets/photos/lobe-website-thumbnail.png" alt="Project Preview Image"
+                                <img src="assets/photos/lobe-website-thumbnail.png" alt="Project Preview Image"
                                     class="project-preview-image">
                                 <h2 class="project-title card-text">Lobe Website Mockup</h2>
                             </div>
@@ -98,7 +153,7 @@
                         </div>
                         <div class="project-card">
                             <div class="default-view">
-                                <img src="../assets/photos/weather-app-thumbnail.png" alt="Project Preview Image"
+                                <img src="assets/photos/weather-app-thumbnail.png" alt="Project Preview Image"
                                     class="project-preview-image">
                                 <h2 class="project-title card-text">Weather App UI Mockup</h2>
                             </div>
@@ -115,7 +170,7 @@
                         </div>
                         <div class="project-card">
                             <div class="default-view">
-                                <img src="../assets/photos/project-prioritize.png" alt="Project Preview Image"
+                                <img src="assets/photos/youtube-mockup-thumbnail.png" alt="Project Preview Image"
                                     class="project-preview-image">
                                 <h2 class="project-title card-text">YouTube Mobile UI Mockup</h2>
                             </div>
@@ -132,7 +187,7 @@
                         </div>
                         <div class="project-card">
                             <div class="default-view">
-                                <img src="../assets/photos/project-prioritize.png" alt="Project Preview Image"
+                                <img src="assets/photos/facebook-mockup-thumbnail.png" alt="Project Preview Image"
                                     class="project-preview-image">
                                 <h2 class="project-title card-text">Facebook Mobile UI Mockup</h2>
                             </div>
@@ -149,7 +204,7 @@
                         </div>
                         <div class="project-card">
                             <div class="default-view">
-                                <img src="../assets/photos/project-prioritize.png" alt="Project Preview Image"
+                                <img src="assets/photos/twitter-mockup-thumbnail.png" alt="Project Preview Image"
                                     class="project-preview-image">
                                 <h2 class="project-title card-text">Twitter Mobile UI Mockup</h2>
                             </div>
@@ -175,7 +230,7 @@
                     <ul>
                         <div class="project-card">
                             <div class="default-view">
-                                <img src="../assets/photos/project-prioritize.png" alt="Project Preview Image"
+                                <img src="assets/photos/silid-thumbnail.png" alt="Project Preview Image"
                                     class="project-preview-image">
                                 <h2 class="project-title card-text">Silid: Securing Rooms for Individuals</h2>
                             </div>
@@ -193,7 +248,7 @@
                         </div>
                         <div class="project-card">
                             <div class="default-view">
-                                <img src="../assets/photos/project-prioritize.png" alt="Project Preview Image"
+                                <img src="assets/photos/payo-thumbnail.png" alt="Project Preview Image"
                                     class="project-preview-image">
                                 <h2 class="project-title card-text">Payo</h2>
                             </div>
@@ -211,7 +266,7 @@
                         </div>
                         <div class="project-card">
                             <div class="default-view">
-                                <img src="../assets/photos/project-prioritize.png" alt="Project Preview Image"
+                                <img src="assets/photos/ingat-thumbnail.png" alt="Project Preview Image"
                                     class="project-preview-image">
                                 <h2 class="project-title card-text">INGAT</h2>
                             </div>
@@ -231,7 +286,7 @@
                         </div>
                         <div class="project-card">
                             <div class="default-view">
-                                <img src="../assets/photos/project-prioritize.png" alt="Project Preview Image"
+                                <img src="assets/photos/mkms-thumnail.png" alt="Project Preview Image"
                                     class="project-preview-image">
                                 <h2 class="project-title card-text">Multimedia Keys Monitoring System (MKMS)</h2>
                             </div>
@@ -250,7 +305,7 @@
                         </div>
                         <div class="project-card">
                             <div class="default-view">
-                                <img src="../assets/photos/project-prioritize.png" alt="Project Preview Image"
+                                <img src="assets/photos/liams-thumbnail.png" alt="Project Preview Image"
                                     class="project-preview-image">
                                 <h2 class="project-title card-text">Library Attendance Monitoring System (LiAMS)</h2>
                             </div>
@@ -270,7 +325,7 @@
                         </div>
                         <div class="project-card">
                             <div class="default-view">
-                                <img src="../assets/photos/project-prioritize.png" alt="Project Preview Image"
+                                <img src="assets/photos/innotrash-thumbnail.png" alt="Project Preview Image"
                                     class="project-preview-image">
                                 <h2 class="project-title card-text">Project: iNNOTRASH</h2>
                             </div>
@@ -320,8 +375,6 @@
             </div>
         </section>
     </footer>
-
-    <script src="/js/asynchronous.js"></script>
 
 </body>
 
