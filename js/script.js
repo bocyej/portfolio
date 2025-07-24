@@ -45,9 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const cardText = document.querySelectorAll(".card-text");
         const toolsAndLanguages = document.querySelectorAll(".tools-or-languages");
 
-        const timeline = document.getElementById("timeline");
-        const timelineCircle = document.getElementById("timeline-circle");
-
         if (isLightTheme) {
             aTag.forEach(link => {
                 link.classList.add('dark-text');
@@ -76,15 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
             toolsAndLanguages.forEach(link => {
                 link.style.border = "#E8E9EB 1px solid"
             });
-
-            if (timeline) {
-                document.documentElement.style.setProperty("--timeline-border-left", "2px solid #E8E9EB");
-            }
-
-            if (timelineCircle) {
-                document.documentElement.style.setProperty("--timeline-circle-background", "#313638 !important");
-                document.documentElement.style.setProperty("--timeline-circle-border", "3px solid #E8E9EB");
-            }
         } else if (isDarkTheme) {
             aTag.forEach(link => {
                 link.classList.remove('dark-text');
@@ -113,15 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
             toolsAndLanguages.forEach(link => {
                 link.style.border = "#313638 1px solid"
             });
-
-            if (timeline) {
-                timeline.style.setProperty("--timeline-border-left", "2px solid #313638");
-            }
-
-            if (timelineCircle) {
-                document.documentElement.style.setProperty("--timeline-circle-background", "#E8E9EB !important");
-                document.documentElement.style.setProperty("--timeline-circle-border", "3px solid #313638");
-            }
         }
         document.head.appendChild(style);
     }
