@@ -63,6 +63,10 @@ ul {
   list-style: none;
 }
 
+a {
+  color: #e8e9eb;
+}
+
 .no-scroll {
   height: 100vh;
   height: 100dvh;
@@ -124,4 +128,5 @@ ul {
   }
 }
 
-@media only screen and (min-width: 1101px) and (max-width: 1280px) {}
+@media only screen and (min-width: 1101px) and (max-width: 1280px) {
+}
