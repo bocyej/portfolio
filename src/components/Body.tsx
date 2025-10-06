@@ -5,16 +5,25 @@ import mobileToggleLogo from "../assets/photos/light-mode.png";
 import GitHubIcon from "./icons/Github";
 import LinkedinIcon from "./icons/Linkedin";
 import InstagramIcon from "./icons/Instagram";
+import { useEffect } from "react";
+import { introductionAnimation } from "../utils/script";
+import { hideMobileNavModal } from "../utils/script";
 
-function Body() {
-  function hideMobileNavModal() {}
+const Body = () => {
+  useEffect(() => {
+    introductionAnimation();
+  });
+
+  const toggleMobileModal = () => {
+    hideMobileNavModal();
+  }
 
   return (
     <>
-      {/* <div id="mobile-nav-modal">
+      <div id="mobile-nav-modal">
         <div className="modal-content">
-          <a href="#" onClick={hideMobileNavModal} className="close-icon">
-            <i className="fa fa-times"></i>
+          <a href="#" onClick={toggleMobileModal} className="close-icon">
+            <i className="fa fa-times"></i>x
           </a>
           <ul>
             <li>
@@ -38,7 +47,7 @@ function Body() {
             </li>
           </ul>
         </div>
-      </div> */}
+      </div>
 
       <main id="content">
         <div id="home">
@@ -955,6 +964,6 @@ function Body() {
       </main>
     </>
   );
-}
+};
 
 export default Body;
