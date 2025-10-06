@@ -139,50 +139,48 @@ export function switchTheme(): void {
 }
 
 // Entry for each word
-const paragraphs: NodeListOf<HTMLParagraphElement> = document.querySelectorAll(
-  ".introduction-description p"
-);
+export function introductionAnimation(): void {
+  const paragraphs: NodeListOf<HTMLParagraphElement> =
+    document.querySelectorAll(".introduction-description p");
 
-let totalDelay = 0;
+  let totalDelay = 0;
 
-if (paragraphs) {
-  paragraphs.forEach((p) => {
-    const text = p.textContent.trim();
-    const words = text.split(" ");
-    p.innerHTML = "";
+  if (paragraphs) {
+    paragraphs.forEach((p) => {
+      const text = p.textContent.trim();
+      const words = text.split(" ");
+      p.innerHTML = "";
 
-    words.forEach((word, wordIndex) => {
-      const span = document.createElement("span");
-      span.textContent = word;
-      span.classList.add("word");
+      words.forEach((word, wordIndex) => {
+        const span = document.createElement("span");
+        span.textContent = word;
+        span.classList.add("word");
 
-      const delay = totalDelay + wordIndex * 0.03;
-      span.style.animationDelay = `${delay}s`;
+        const delay = totalDelay + wordIndex * 0.03;
+        span.style.animationDelay = `${delay}s`;
 
-      p.appendChild(span);
-      p.appendChild(document.createTextNode(" "));
+        p.appendChild(span);
+        p.appendChild(document.createTextNode(" "));
+      });
+
+      totalDelay += words.length * 0.03 + 0.3;
     });
+  }
 
-    totalDelay += words.length * 0.03 + 0.3;
-  });
+  // Right Arrow Bouncing
+  const arrow = document.getElementById("arrow") as HTMLElement | null;
+
+  if (arrow) {
+    setInterval(() => {
+      arrow.classList.remove("bounce");
+      void arrow.offsetWidth;
+      arrow.classList.add("bounce");
+    }, 2500);
+  }
 }
-
-// Right Arrow Bouncing
-const arrow = document.getElementById("arrow") as HTMLElement | null;
-
-if (arrow) {
-  setInterval(() => {
-    arrow.classList.remove("bounce");
-    void arrow.offsetWidth;
-    arrow.classList.add("bounce");
-  }, 2500);
-}
-
-// Ensure dark theme is selected on page load
-switchTheme();
 
 // Display Mobile Top Nav Modal
-function showMobileNavModal(): void {
+export function showMobileNavModal(): void {
   const modal = document.getElementById(
     "mobile-nav-modal"
   ) as HTMLElement | null;
@@ -194,7 +192,7 @@ function showMobileNavModal(): void {
 }
 
 // Hide Mobile Top Nav Modal
-function hideMobileNavModal(): void {
+export function hideMobileNavModal(): void {
   const modal = document.getElementById(
     "mobile-nav-modal"
   ) as HTMLElement | null;
