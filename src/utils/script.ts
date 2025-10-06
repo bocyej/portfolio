@@ -1,15 +1,9 @@
 window.addEventListener("load", () => {
   document.body.classList.add("theme-transition");
+  document.body.classList.add("dark-mode");
 });
 
 // Toggle Theme Switch
-const toggleThemeButton = document.getElementById(
-  "toggleThemeButton"
-) as HTMLElement | null;
-const toggleThemeButtonModal = document.getElementById(
-  "toggleThemeButtonModal"
-) as HTMLElement | null;
-
 function isLightThemeActive() {
   return document.body.classList.contains("light-mode");
 }
@@ -90,11 +84,11 @@ export function switchTheme(): void {
     });
 
     toolsAndLanguages.forEach((link) => {
-      link.style.border = "#E8E9EB 1px solid";
+      link.style.border = "#313638 1px solid";
     });
 
     iconPath.forEach((link) => {
-      link.style.fill = "#E8E9EB";
+      link.style.fill = "#313638";
     });
 
     document.body.classList.add("light-mode");
@@ -125,17 +119,16 @@ export function switchTheme(): void {
     });
 
     toolsAndLanguages.forEach((link) => {
-      link.style.border = "#313638 1px solid";
+      link.style.border = "#E8E9EB 1px solid";
     });
 
     iconPath.forEach((link) => {
-      link.style.fill = "#313638";
+      link.style.fill = "#E8E9EB";
     });
 
     document.body.classList.remove("light-mode");
     document.body.classList.add("dark-mode");
   }
-  document.head.appendChild(style);
 }
 
 // Entry for each word
