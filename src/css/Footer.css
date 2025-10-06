@@ -11,3 +11,63 @@ footer {
 .footer-social-media {
     display: none;
 }
+
+@media only screen and (max-width: 430px) {
+    footer {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    background-color: var(--timeline-circle-background);
+    padding: 15px 0;
+    z-index: 100;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  .footer-social-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-social-media a {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 1100px) {
+    footer {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    background-color: var(--timeline-circle-background);
+    padding: 15px 0;
+    z-index: 100;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  .footer-social-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-social-media a {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1280px) {}
