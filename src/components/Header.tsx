@@ -1,17 +1,18 @@
 import "../css/Header.css";
 import headerLogo from "../assets/photos/logo-light.png";
 import toggleLogo from "../assets/photos/light-mode.png";
-import { switchTheme } from "../utils/script";
+import { switchTheme, showMobileNavModal } from "../utils/script";
 
 function Header() {
-  function showMobileNavModal() {}
-
-  const handleToggleTheme = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleToggleTheme = () => {
     document.body.classList.toggle("light-mode");
     document.body.classList.toggle("dark-mode");
-    console.log("working in ts");
     switchTheme();
-  }
+  };
+
+  const toggleMobileModal = () => {
+    showMobileNavModal();
+  };
 
   return (
     <>
@@ -25,8 +26,13 @@ function Header() {
               className="header-logo"
             />
           </a>
-          <a href="#" onClick={showMobileNavModal} className="hamburger">
+          <a
+            onClick={toggleMobileModal}
+            className="hamburger"
+            id="hamburger-icon"
+          >
             <i className="fa fa-bars"></i>
+            []
           </a>
           <ul>
             <li>
