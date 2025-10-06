@@ -1,9 +1,14 @@
 import "../css/Header.css";
 import headerLogo from "../assets/photos/logo-light.png";
 import toggleLogo from "../assets/photos/light-mode.png";
+import { useEffect } from "react";
 import { switchTheme, showMobileNavModal } from "../utils/script";
 
 function Header() {
+  useEffect(() => {
+    switchTheme();
+  });
+
   const handleToggleTheme = () => {
     document.body.classList.toggle("light-mode");
     document.body.classList.toggle("dark-mode");
