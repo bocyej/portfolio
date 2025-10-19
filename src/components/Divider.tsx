@@ -1,12 +1,9 @@
 const Divider = () => {
   return (
     <>
-      <div className="half-screen">
-        <div className="horizontal-divider"></div>
-      </div>
+      <div className="horizontal-divider"></div>
     </>
   );
 };
-
 
 export default Divider;
