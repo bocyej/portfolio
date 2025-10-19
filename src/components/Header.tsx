@@ -22,8 +22,8 @@ function Header() {
   return (
     <>
       <header>
-        <nav className="limited-width">
-          <a href="index.html">
+        <nav>
+          <a href="#home">
             <img
               id="header-logo"
               src={headerLogo}
