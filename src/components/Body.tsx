@@ -8,6 +8,7 @@ import Home from "./pageSections/Home";
 import MobileNavBar from "./MobileNavbar";
 import Projects from "./pageSections/Projects";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const Body = () => {
   useEffect(() => {
@@ -31,6 +32,8 @@ const Body = () => {
           <Contact />
         </div>
       </main>
+      
+      <Footer />
     </>
   );
 };
