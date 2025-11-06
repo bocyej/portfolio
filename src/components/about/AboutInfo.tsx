@@ -10,7 +10,18 @@ const AboutInfo = ({ title, content, additionalClass }: Props) => {
   return (
     <>
       <div className={`section-border ${additionalClass}`}>
-        <section className="label">{title} <a href="/certifications">LOL</a></section>
+        <section className="label">
+          {title}
+          <a
+            href={
+              title == "Certifications"
+                ? "/certifications"
+                : "/experiences"
+            }
+          >
+            See more
+          </a>
+        </section>
         <section className="background-rectangle">{content}</section>
       </div>
     </>
