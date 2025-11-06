@@ -23,7 +23,7 @@ function Header() {
     <>
       <header>
         <nav className="limited-width">
-          <a href="index.html">
+          <a href="/">
             <img
               id="header-logo"
               src={headerLogo}
