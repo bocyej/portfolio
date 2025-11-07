@@ -33,18 +33,9 @@ export function switchTheme(): void {
       : "src/assets/photos/light-mode.png";
   }
 
-  const header1: NodeListOf<HTMLHeadingElement> =
-    document.querySelectorAll("h1");
-  const header2: NodeListOf<HTMLHeadingElement> =
-    document.querySelectorAll("h2");
-  const header3: NodeListOf<HTMLHeadingElement> =
-    document.querySelectorAll("h3");
   const paragraphs: NodeListOf<HTMLParagraphElement> =
     document.querySelectorAll("p");
   const aTag: NodeListOf<HTMLAnchorElement> = document.querySelectorAll("a");
-  const lists: NodeListOf<HTMLLIElement> = document.querySelectorAll("li");
-
-  const style = document.createElement("style");
 
   const projectCard: NodeListOf<HTMLElement> =
     document.querySelectorAll(".project-card");
