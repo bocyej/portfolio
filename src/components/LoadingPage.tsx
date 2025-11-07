@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 
 const LoadingPage = () => {
   useEffect(() => {
+    document.body.style.overflow = "hidden";
+
     const timeline = gsap.timeline({
       defaults: { ease: "power1.out" },
     });
@@ -28,6 +30,8 @@ const LoadingPage = () => {
         onComplete: () => {
           const page = document.querySelector(".loading-page") as HTMLElement;
           if (page) page.style.display = "none";
+
+          document.body.style.overflow = "auto";
         },
       }
     );
