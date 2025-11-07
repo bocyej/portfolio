@@ -34,7 +34,6 @@ const Home = () => {
                     id="arrow"
                     aria-hidden="true"
                   >
-                    ---
                   </i>
                 </p>
               </a>
