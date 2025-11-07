@@ -7,6 +7,34 @@ const CertificationTimeline = () => {
         <article className="timeline">
           <ul>
             <CertificationCircle
+              certificationName={"Learning Microsoft 365 Copilot for Work (2024)"}
+              year={"2025"}
+              link={
+                "https://www.linkedin.com/learning/certificates/ec11ce2a3c603a77d39cee35f22c0b0546498f258d53c6096d5fff873f3d972e?trk=share_certificate"
+              }
+            />
+            <CertificationCircle
+              certificationName={"Streamlining Your Work with Microsoft Copilot"}
+              year={"2025"}
+              link={
+                "https://www.linkedin.com/learning/certificates/d329c07de1da36bed58c715055280fa009e7ca3147d9812dfd75c66f81cf3474?trk=share_certificate"
+              }
+            />
+            <CertificationCircle
+              certificationName={"Generative AI: The Evolution of Thoughtful Online Search"}
+              year={"2025"}
+              link={
+                "https://www.linkedin.com/learning/certificates/74e278d03b39aa894f01ed0ea50722023e7fa1d6c242b9dc00916d46cb45074d?trk=share_certificate"
+              }
+            />
+            <CertificationCircle
+              certificationName={"What Is Generative AI?"}
+              year={"2025"}
+              link={
+                "https://www.linkedin.com/learning/certificates/3d22c37fadb3f4a9d7e77b06ccafe59886ee91d47f6f9e431406163039e3ca3f?trk=share_certificate"
+              }
+            />
+            <CertificationCircle
               certificationName={"Microsoft Certified: Azure Fundamentals"}
               year={"2024"}
               link={
