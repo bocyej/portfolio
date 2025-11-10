@@ -184,13 +184,19 @@ body.light-mode .sparkle {
 
 .label {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
+  align-items: center;
   min-width: 50%;
   text-decoration: none;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-size: 30px;
+  font-size: 25px;
+  margin: 0 0 20px;
+}
+
+.see-more{
+  font-size: 12px;
 }
 
 .background-rectangle {
@@ -233,7 +239,7 @@ body.light-mode .sparkle {
 }
 
 .timeline-information h2 {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .title-and-year {
@@ -244,14 +250,16 @@ body.light-mode .sparkle {
   padding: 0 0 5px 0;
 }
 
-.title-and-year h4 {
-  font-weight: 500;
-  padding: 0 0 0 10px;
-}
-
 .role {
   font-weight: 400;
   padding: 0 0 5px 0;
+  /* font-size: 14px; */
+}
+
+.timeline-information p {
+  font-weight: 400;
+  padding: 0 0 5px 0;
+  font-size: 14px;
 }
 
 .view-button {
