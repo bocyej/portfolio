@@ -13,6 +13,7 @@ const AboutInfo = ({ title, content, additionalClass }: Props) => {
         <section className="label">
           {title}
           <a
+            className="see-more"
             href={
               title == "Certifications"
                 ? "/certifications"
