@@ -38,21 +38,21 @@ body::-webkit-scrollbar {
   --timeline-border-left: 2px solid #313638;
   --timeline-circle-background: #e8e9eb;
   --timeline-circle-border: 3px solid #313638;
-  --rectangle-border: 2px solid #313638;
+  --rectangle-border: 1px solid #313638;
 }
 
 body.light-mode {
   --timeline-border-left: 2px solid #313638;
   --timeline-circle-background: #e8e9eb;
   --timeline-circle-border: 3px solid #313638;
-  --rectangle-border: 2px solid #313638;
+  --rectangle-border: 1px solid #313638;
 }
 
 body.dark-mode {
   --timeline-border-left: 2px solid #e8e9eb;
   --timeline-circle-background: #313638;
   --timeline-circle-border: 3px solid #e8e9eb;
-  --rectangle-border: 2px solid #e8e9eb;
+  --rectangle-border: 1px solid #e8e9eb;
 }
 
 main {
