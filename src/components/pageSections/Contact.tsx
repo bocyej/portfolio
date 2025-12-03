@@ -10,6 +10,7 @@ const Contact = () => {
         <div className="limited-width">
           <section id="title">Contact</section>
           <article id="contact-area">
+            <p>Want to create something together? Connect with me in any of my socials!</p>
             <div className="socials-row">
               <ContactCard
                 link={"https://www.github.com/bocyej/"}
