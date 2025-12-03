@@ -6,7 +6,7 @@ import About from "./pageSections/About";
 import Contact from "./pageSections/Contact";
 import Home from "./pageSections/Home";
 import MobileNavBar from "./MobileNavbar";
-import Projects from "./pageSections/Projects";
+import Projects from "./projects/Projects";
 import { Routes, Route } from "react-router-dom";
 import CertificationTimeline from "./about/CertificationTimeline";
 import ExperienceTimeline from "./about/ExperienceTimeline";
@@ -30,11 +30,6 @@ const Body = () => {
           <Route path="/projects" element={<Projects />}></Route>
         </Routes>
 
-        <About />
-
-        <Projects />
-
-        <Contact />
       </main>
     </>
   );
