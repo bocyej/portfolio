@@ -2,6 +2,10 @@ import GitHubIcon from "../icons/Github";
 import InstagramIcon from "../icons/Instagram";
 import LinkedinIcon from "../icons/Linkedin";
 import SocialMediaButton from "../SocialMediaButton";
+import About from "./About";
+import Contact from "./Contact";
+import Projects from "../projects/Projects";
+import TechStack from "./Tech";
 
 const Home = () => {
   return (
@@ -33,8 +37,7 @@ const Home = () => {
                     className="fa fa-long-arrow-right"
                     id="arrow"
                     aria-hidden="true"
-                  >
-                  </i>
+                  ></i>
                 </p>
               </a>
             </div>
@@ -56,6 +59,14 @@ const Home = () => {
           </div>
         </section>
       </div>
+
+      <About />
+
+      <TechStack />
+
+      <Projects />
+
+      <Contact />
     </>
   );
 };
