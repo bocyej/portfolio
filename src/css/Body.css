@@ -195,7 +195,7 @@ body.light-mode .sparkle {
   margin: 0 0 20px;
 }
 
-.see-more{
+.see-more {
   font-size: 12px;
 }
 
@@ -280,6 +280,23 @@ body.light-mode .sparkle {
   width: 100vw;
   max-width: 1200px;
   margin: 25px 0;
+}
+
+/* ---TECH STACK PAGE--- */
+#tech {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.techstack-rectangle {
+  border-radius: 8px;
+  border: var(--rectangle-border);
+  background-color: var(--timeline-circle-background);
+  padding: 5px 10px;
 }
 
 /* ---PROJECTS PAGE--- */
