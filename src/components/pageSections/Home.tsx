@@ -4,7 +4,6 @@ import LinkedinIcon from "../icons/Linkedin";
 import SocialMediaButton from "../SocialMediaButton";
 import About from "./About";
 import Contact from "./Contact";
-import Projects from "../projects/Projects";
 import TechStack from "./Tech";
 
 const Home = () => {
@@ -63,8 +62,6 @@ const Home = () => {
       <About />
 
       <TechStack />
-
-      <Projects />
 
       <Contact />
     </>
