@@ -6,9 +6,17 @@ const About = () => {
   return (
     <>
       <div id="about">
-        <AboutInfo title={"Work Experience"} content={<ExperienceTimeline />} additionalClass="work-experience"/>
+        <AboutInfo
+          title={"Work Experience"}
+          content={<ExperienceTimeline />}
+          additionalClass="work-experience"
+        />
 
-        <AboutInfo title={"Certifications"} content={<CertificationTimeline />} additionalClass="certifications"/>
+        <AboutInfo
+          title={"Certifications"}
+          content={<CertificationTimeline />}
+          additionalClass="certifications"
+        />
       </div>
     </>
   );
