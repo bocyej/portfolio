@@ -1,45 +1,48 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 
-const LoadingPage = () => {
+interface LoadingPageProps {
+  onComplete: () => void;
+}
+
+const LoadingPage = ({ onComplete }: LoadingPageProps) => {
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
     const timeline = gsap.timeline({
       defaults: { ease: "power1.out" },
+      onComplete: () => {
+        document.body.style.overflow = "auto";
+        onComplete();
+      },
     });
 
-    timeline.fromTo(
-      ".logo-name",
-      { y: 50, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1.2,
-        delay: 0.5,
-      }
-    );
-
-    timeline.fromTo(
-      ".loading-page",
-      { opacity: 1 },
-      {
-        opacity: 0,
-        duration: 1.5,
-        delay: 1.5,
-        onComplete: () => {
-          const page = document.querySelector(".loading-page") as HTMLElement;
-          if (page) page.style.display = "none";
-
-          document.body.style.overflow = "auto";
-        },
-      }
-    );
+    timeline
+      .fromTo(
+        ".loading-page",
+        { opacity: 1 },
+        {
+          opacity: 1,
+          duration: 0,
+        //   delay: 1.5,
+        }
+      )
+      .fromTo(
+        ".logo-name",
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1.2,
+          delay: 0.5,
+        }
+      )
+      .to(".loading-page", { opacity: 0, duration: 1.5, delay: 0.5 });
 
     return () => {
       timeline.kill();
     };
-  }, []);
+  }, [onComplete]);
 
   return (
     <>
