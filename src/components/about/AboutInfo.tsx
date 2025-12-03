@@ -17,7 +17,11 @@ const AboutInfo = ({ title, content, additionalClass }: Props) => {
             href={
               title == "Certifications"
                 ? "/certifications"
-                : "/experiences"
+                : title == "Work Experience"
+                ? "/experiences"
+                : title == "Recent Projects"
+                ? "/projects"
+                : "/tech-stack"
             }
           >
             See more
