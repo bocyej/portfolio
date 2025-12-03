@@ -1,11 +1,7 @@
-interface Props {
-  label: string;
-}
-
-const MoreTechStack = ({ label }: Props) => {
+const MoreTechStack = () => {
   return (
     <>
-      <section className="background-rectangle">{label}</section>
+      <section className="background-rectangle"></section>
     </>
   );
 };
