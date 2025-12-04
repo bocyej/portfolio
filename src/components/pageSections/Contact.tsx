@@ -2,6 +2,7 @@ import ContactCard from "../contact/ContactCard";
 import GitHubIcon from "../icons/Github";
 import InstagramIcon from "../icons/Instagram";
 import LinkedinIcon from "../icons/Linkedin";
+import TextType from "../reactbits/TextType";
 
 const Contact = () => {
   return (
@@ -10,7 +11,7 @@ const Contact = () => {
         <div className="limited-width">
           <section id="title">Contact</section>
           <article id="contact-area">
-            <p>Want to create something together? Connect with me in any of my socials!</p>
+            <TextType text={["Want to create something together?", "Connect with me in any of my socials!"]} />
             <div className="socials-row">
               <ContactCard
                 link={"https://www.github.com/bocyej/"}
