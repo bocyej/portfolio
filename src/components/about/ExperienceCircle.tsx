@@ -1,10 +1,13 @@
+import "../../index.css";
+import "../../css/Body.css";
+
 interface Props {
-    company: string;
-    role: string;
-    duration: string;
+  company: string;
+  role: string;
+  duration: string;
 }
 
-const ExperienceCircle = ({company, role, duration}: Props) => {
+const ExperienceCircle = ({ company, role, duration }: Props) => {
   return (
     <>
       <li className="timeline-circle">
@@ -12,7 +15,7 @@ const ExperienceCircle = ({company, role, duration}: Props) => {
           <div className="title-and-year">
             <h2>{company}</h2>
           </div>
-          <h4 className="role">{role}</h4>
+          <p className="role">{role}</p>
           <p>{duration}</p>
         </div>
       </li>
