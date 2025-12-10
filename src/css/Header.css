@@ -34,29 +34,6 @@ nav ul li {
   -webkit-user-drag: none;
 }
 
-.underline {
-  position: relative;
-}
-
-.underline::after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  left: -5px;
-  bottom: -10px;
-  width: 0;
-  background-color: #e8e9eb;
-  transition: width 0.2s;
-}
-
-body.light-mode .underline::after {
-  background-color: #313638;
-}
-
-.underline:hover::after {
-  width: 120%;
-}
-
 nav a {
   user-select: none;
   -webkit-user-drag: none;
