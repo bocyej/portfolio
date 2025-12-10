@@ -13,7 +13,7 @@
 body.light-mode .sparkle {
   position: relative;
   display: inline-block;
-  color: #ffffff;
+  color: #313638 !important;
   font-weight: bold;
   animation: shimmer 5s infinite;
   background: linear-gradient(90deg, #313638, #ffd51e, #313638);
@@ -153,18 +153,23 @@ body.light-mode .sparkle {
 #about {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr;
   column-gap: 25px;
   row-gap: 25px;
 }
 
+.sub-page-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
 .work-experience {
-  grid-area: 1 / 2 / 2 / 5;
+  grid-area: 1 / 1 / 2 / 4;
 }
 
 .certifications {
-  grid-area: 1 / 5 / 2 / 10;
+  grid-area: 1 / 4 / 2 / 9;
 }
 
 .half-screen {
@@ -202,6 +207,7 @@ body.light-mode .sparkle {
 .background-rectangle {
   border-radius: 15px;
   min-width: 50%;
+  margin: 0 0 0 5px;
 }
 
 .timeline-circle {
@@ -253,7 +259,7 @@ body.light-mode .sparkle {
 .role {
   font-weight: 400;
   padding: 0 0 5px 0;
-  /* font-size: 14px; */
+  font-size: 16px !important;
 }
 
 .timeline-information p {
@@ -286,7 +292,7 @@ body.light-mode .sparkle {
 #tech {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr;
   column-gap: 25px;
   row-gap: 25px;
@@ -311,11 +317,11 @@ body.light-mode .sparkle {
 }
 
 .stack {
-  grid-area: 1 / 7 / 2 / 10;
+  grid-area: 1 / 5 / 2 / 9;
 }
 
 .recent-projects {
-  grid-area: 1 / 2 / 2 / 7;
+  grid-area: 1 / 1 / 2 / 5;
 }
 
 /* ---PROJECTS PAGE--- */
@@ -490,6 +496,20 @@ body.light-mode .sparkle {
 
 .socials-container p {
   margin: 10px 0 0 0;
+}
+
+.go-back {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-height: 35px;
+  text-decoration: none;
+  width: 145px;
+  max-width: 145px;
+}
+
+.go-back p {
+  margin: 0 0 0 5px;
 }
 
 @media only screen and (max-width: 430px) {
