@@ -7,27 +7,18 @@ interface Props {
   username: string;
 }
 
-const ContactCard = ({
-  link,
-  label,
-  icon,
-  username,
-}: Props) => {
+const ContactCard = ({ link, label, icon, username }: Props) => {
   return (
     <>
-      <div className="socials-container">
-        <a href={link} target="_blank">
+      <a href={link} target="_blank">
+        <div className="socials-container">
           {icon}
-        </a>
-        <p>
-          {label}
-          <span>
-            <a href={link} target="_blank">
-              {username} &#8599;
-            </a>
-          </span>
-        </p>
-      </div>
+          <p>
+            {label}
+            <span>{username} &#8599;</span>
+          </p>
+        </div>
+      </a>
     </>
   );
 };
