@@ -1,6 +1,8 @@
 import AboutInfo from "../about/AboutInfo";
-import CertificationTimeline from "../about/CertificationTimeline";
-import ExperienceTimeline from "../about/ExperienceTimeline";
+import CertificationTimelineSummary from "../about/CertificationTimelineSummary";
+import ExperienceTimelineSummary from "../about/ExperienceTimelineSummary"
+import "../../index.css";
+import "../../css/Body.css";;
 
 const About = () => {
   return (
@@ -8,13 +10,13 @@ const About = () => {
       <div id="about">
         <AboutInfo
           title={"Work Experience"}
-          content={<ExperienceTimeline />}
+          content={<ExperienceTimelineSummary />}
           additionalClass="work-experience"
         />
 
         <AboutInfo
           title={"Certifications"}
-          content={<CertificationTimeline />}
+          content={<CertificationTimelineSummary />}
           additionalClass="certifications"
         />
       </div>
