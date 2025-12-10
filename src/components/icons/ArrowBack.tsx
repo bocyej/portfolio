@@ -1,9 +1,10 @@
+import "../../index.css";
 import "../../css/Body.css";
 
 function InstagramIcon() {
   return (
     <>
-      <svg fill="none" stroke="var(--color)" viewBox="0 0 24 24" width="50" height="50">
+      <svg fill="none" stroke="var(--color)" viewBox="0 0 24 24" width="30" height="30">
         <path
           stroke-linecap="round"
           stroke-linejoin="round"
