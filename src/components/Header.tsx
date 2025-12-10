@@ -37,25 +37,7 @@ function Header() {
             id="hamburger-icon"
           >
             <i className="fa fa-bars"></i>
-            []
           </a>
-          <ul>
-            <li>
-              <a href="#about" className="nav-link underline">
-                // About
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="nav-link underline">
-                // Projects
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="nav-link underline">
-                // Contact
-              </a>
-            </li>
-          </ul>
           <a id="themeButton" onClick={handleToggleTheme}>
             <div id="toggleThemeButton">
               <img
