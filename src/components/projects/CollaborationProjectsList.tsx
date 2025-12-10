@@ -8,6 +8,9 @@ import mkmsThumbnail from "../../assets/photos/mkms-thumnail.png";
 import payoThumbnail from "../../assets/photos/payo-thumbnail.png";
 import silidThumbnail from "../../assets/photos/silid-thumbnail.png";
 
+import "../../index.css";
+import "../../css/Body.css";
+
 
 const CollaborationProjectsList = () => {
   return (

@@ -3,6 +3,8 @@ import GitHubIcon from "../icons/Github";
 import InstagramIcon from "../icons/Instagram";
 import LinkedinIcon from "../icons/Linkedin";
 import TextType from "../reactbits/TextType";
+import "../../index.css";
+import "../../css/Body.css";
 
 const Contact = () => {
   return (

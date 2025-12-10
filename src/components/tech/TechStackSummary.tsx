@@ -1,5 +1,7 @@
 import Category from "./Category";
 import TechStackCard from "./TechStackCard";
+import "../../index.css";
+import "../../css/Body.css";
 
 const TechStackSummary = () => {
   return (

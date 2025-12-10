@@ -5,6 +5,8 @@ import SocialMediaButton from "../SocialMediaButton";
 import About from "./About";
 import Contact from "./Contact";
 import TechStack from "./Tech";
+import "../../index.css";
+import "../../css/Body.css";
 
 const Home = () => {
   return (

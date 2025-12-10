@@ -1,3 +1,6 @@
+import "../../index.css";
+import "../../css/Body.css";
+
 interface Props {
   toolsOrLanguage: string;
 }

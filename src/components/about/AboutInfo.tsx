@@ -1,3 +1,5 @@
+import "../../index.css";
+import "../../css/Body.css";
 import type { ReactNode } from "react";
 
 interface Props {

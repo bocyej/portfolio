@@ -1,3 +1,6 @@
+import "../../index.css";
+import "../../css/Body.css";
+
 const ContactInfo = () => {
   return (
     <>

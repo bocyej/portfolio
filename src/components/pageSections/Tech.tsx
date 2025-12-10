@@ -1,6 +1,8 @@
 import AboutInfo from "../about/AboutInfo";
 import TechStackCard from "../tech/TechStackCard";
 import TechStackSummary from "../tech/TechStackSummary";
+import "../../index.css";
+import "../../css/Body.css";
 
 const Tech = () => {
   return (
