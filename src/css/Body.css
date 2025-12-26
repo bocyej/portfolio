@@ -525,7 +525,7 @@ body.light-mode .sparkle {
 
   .limited-width {
     align-items: center;
-    width: 100dvw;
+    width: 100%;
     padding: 0 25px;
   }
 
@@ -537,21 +537,49 @@ body.light-mode .sparkle {
     max-width: 400px;
   }
 
+
   /* ---ABOUT PAGE--- */
+  #about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+    padding: 0 25px;
+  }
+
+  .work-experience {
+    grid-area: 1 / 1 / 1 / 1;
+  }
+
+  .certifications {
+    grid-area: 2 / 1 / 2 / 1;
+  }
+
   .half-screen {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
+  .section-border {
+    border: var(--rectangle-border);
+    border-radius: 10px;
+    max-height: 50vh;
+    /* max-width: 50%; */
+    padding: 10px 0;
+    overflow: hidden;
+  }
+
   .label {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     min-width: 100%;
     width: 100%;
     text-decoration: none;
     font-optical-sizing: auto;
-    padding: 10px 0;
+    padding: 10px 20px;
   }
 
   .background-rectangle {
@@ -592,6 +620,33 @@ body.light-mode .sparkle {
 
   .margin-top {
     margin-top: 100px;
+  }
+
+  /* ---TECH STACK PAGE--- */
+  #tech {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+    padding: 0 25px;
+  }
+
+  .techstack-rectangle {
+    border-radius: 8px;
+    border: var(--rectangle-border);
+    background-color: var(--timeline-circle-background);
+    padding: 5px 10px;
+    margin: 5px 5px 10px 0;
+  }
+
+  .stack {
+    grid-area: 2 / 1 / 2 / 1;
+  }
+
+  .recent-projects {
+    grid-area: 1 / 1 / 1 / 1;
   }
 
   /* ---PROJECTS PAGE--- */
@@ -694,7 +749,11 @@ body.light-mode .sparkle {
 
   /* ---CONTACT PAGE--- */
   .email-paragraph {
-    margin: 0 0 75px 0;
+    margin: 0;
+  }
+
+  .mobile-copyright{
+    margin: 50px 0 25px 0;
   }
 
   .socials-container {
