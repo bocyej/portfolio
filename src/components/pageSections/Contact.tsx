@@ -13,7 +13,12 @@ const Contact = () => {
         <div className="limited-width">
           <section id="title">Contact</section>
           <article id="contact-area">
-            <TextType text={["Want to create something together?", "Connect with me in any of my socials!"]} />
+            <TextType
+              text={[
+                "Want to create something together?",
+                "Connect with me in any of my socials!",
+              ]}
+            />
             <div className="socials-row">
               <ContactCard
                 link={"https://www.github.com/bocyej/"}
@@ -42,6 +47,9 @@ const Contact = () => {
                 </a>
               </span>{" "}
               if you have any attachments.
+            </p>
+            <p className="mobile-copyright">
+              &copy; 2025 Jacob Laurel. All Rights Reserved.
             </p>
           </article>
         </div>
