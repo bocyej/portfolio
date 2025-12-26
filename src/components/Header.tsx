@@ -3,6 +3,7 @@ import headerLogo from "../assets/photos/logo-light.png";
 import toggleLogo from "../assets/photos/light-mode.png";
 import { useEffect } from "react";
 import { switchTheme, showMobileNavModal } from "../utils/script";
+import MenuIcon from "./icons/Menu";
 
 function Header() {
   useEffect(() => {
@@ -36,7 +37,7 @@ function Header() {
             className="hamburger"
             id="hamburger-icon"
           >
-            <i className="fa fa-bars"></i>
+            <MenuIcon />
           </a>
           <a id="themeButton" onClick={handleToggleTheme}>
             <div id="toggleThemeButton">
