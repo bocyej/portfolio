@@ -150,6 +150,10 @@ body.light-mode .underline::after {
 }
 
 @media only screen and (max-width: 430px) {
+  main{
+    padding: 0;
+  }
+
   .no-scroll {
     height: 100vh;
     height: 100dvh;
