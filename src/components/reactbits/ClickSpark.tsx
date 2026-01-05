@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useCallback } from 'react';
+import "../../index.css";
 
 interface ClickSparkProps {
   sparkColor?: string;
@@ -19,7 +20,7 @@ interface Spark {
 }
 
 const ClickSpark: React.FC<ClickSparkProps> = ({
-  sparkColor = '#fff',
+  sparkColor = '#ffd51e',
   sparkSize = 10,
   sparkRadius = 15,
   sparkCount = 8,
