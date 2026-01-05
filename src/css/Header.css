@@ -76,7 +76,7 @@ body.modal-open {
 }
 
 .close-icon {
-  color: #e8e9eb !important;
+  color: var(--card-text-color);
   display: block;
   margin: 0 0 5px 0;
   font-size: 35px !important;
@@ -132,7 +132,7 @@ body.modal-open header {
   top: 1rem;
   right: 1.5rem;
   font-size: 1.5rem;
-  color: white;
+  color: var(--card-text-color);
   text-decoration: none;
 }
 
@@ -227,7 +227,7 @@ body.modal-open header {
   }
 
   .close-icon {
-    color: #e8e9eb !important;
+    color: var(--card-text-color);
     display: block;
     margin: 0 0 5px 0;
     font-size: 35px !important;
@@ -347,7 +347,7 @@ body.modal-open header {
   }
 
   .close-icon {
-    color: #e8e9eb !important;
+    color: var(--card-text-color);
     display: block;
     margin: 0 0 5px 0;
     font-size: 35px !important;

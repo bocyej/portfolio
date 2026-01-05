@@ -6,11 +6,7 @@
   align-content: center;
 }
 
-.introduction h1 {
-  font-size: 2.275em;
-}
-
-body.light-mode .sparkle {
+body.light-mode p .sparkle {
   position: relative;
   display: inline-block;
   color: #313638 !important;
@@ -70,10 +66,11 @@ body.light-mode .sparkle {
   align-items: start;
 }
 
-.introduction-description h1,
-.introduction-description p {
+.greeting {
   width: 80%;
   max-width: 80%;
+  font-size: 2.275em;
+  font-weight: 600;
 }
 
 .introduction-description p {
@@ -101,7 +98,7 @@ body.light-mode .sparkle {
 }
 
 .to-projects p {
-  color: #e8e9eb;
+  color: var(--color);
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -256,6 +253,11 @@ body.light-mode .sparkle {
   padding: 0 0 5px 0;
 }
 
+.timeline-information .title-and-year p {
+  font-size: 16px;
+  margin: 0 0 0 15px;
+}
+
 .role {
   font-weight: 400;
   padding: 0 0 5px 0;
@@ -275,6 +277,7 @@ body.light-mode .sparkle {
 
 .view-button a {
   background-color: transparent !important;
+  color: var(--color) !important;
 }
 
 .margin-top {
@@ -350,7 +353,7 @@ body.light-mode .sparkle {
   font-weight: 800;
   font-style: normal;
   font-size: 35px;
-  padding: 50px 0;
+  padding: 50px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -368,7 +371,7 @@ body.light-mode .sparkle {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 #projects-list ul li {
@@ -383,8 +386,8 @@ body.light-mode .sparkle {
   width: 30%;
   max-width: 30%;
   padding: 10px;
-  margin: 20px;
-  background-color: #e8e9eb;
+  margin: 18px;
+  background-color: var(--card-color);
   overflow: hidden;
   cursor: pointer;
   box-shadow: -1px 0px 50px 6px rgba(255, 255, 255, 0.1);
@@ -395,12 +398,8 @@ body.light-mode .sparkle {
     -moz-box-shadow: -1px 0px 50px 6px rgba(0, 0, 0, 0.5); */
 }
 
-.card-light {
-  background-color: #e8e9eb;
-}
-
-.card-dark {
-  background-color: #313638;
+.card-text {
+  color: var(--card-text-color);
 }
 
 .project-preview-image {
@@ -433,6 +432,7 @@ body.light-mode .sparkle {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7);
+  color: var(--card-text-color);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -450,6 +450,7 @@ body.light-mode .sparkle {
 
 .card-hover p {
   margin: 10px 0;
+  color: #313638;
 }
 
 #projects-list .tools-or-languages-list {
@@ -460,20 +461,11 @@ body.light-mode .sparkle {
 
 .tools-or-languages {
   border: #313638 1px solid;
+  color: #313638;
   border-radius: 100px;
   padding: 3px 7px;
   margin: 5px 3px 0 0;
   font-weight: 500;
-}
-
-.card-description-color-light {
-  background-color: transparent !important;
-  color: #e8e9eb !important;
-}
-
-.card-description-color-dark {
-  background-color: transparent !important;
-  color: #313638 !important;
 }
 
 /* ---CONTACT PAGE--- */
@@ -491,6 +483,7 @@ body.light-mode .sparkle {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 25px 0 0;
 }
 
 #contact-area p span {
@@ -565,7 +558,6 @@ body.light-mode .sparkle {
     grid-template-rows: repeat(2, 1fr);
     column-gap: 25px;
     row-gap: 25px;
-    padding: 0 25px;
   }
 
   .work-experience {
@@ -649,7 +641,6 @@ body.light-mode .sparkle {
     grid-template-rows: repeat(2, 1fr);
     column-gap: 25px;
     row-gap: 25px;
-    padding: 0 25px;
   }
 
   .techstack-rectangle {
@@ -767,13 +758,17 @@ body.light-mode .sparkle {
   }
 
   /* ---CONTACT PAGE--- */
+  #contact-area {
+    margin: 15px 0 0;
+  }
+
   .email-paragraph {
     margin: 0;
   }
 
   .mobile-copyright {
     display: block;
-    margin: 50px 0 25px 0;
+    margin: 50px 0 10vh 0;
   }
 
   .socials-container {
@@ -825,7 +820,7 @@ body.light-mode .sparkle {
 
   .label {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     min-width: 100%;
     width: 100%;
     text-decoration: none;
@@ -990,10 +985,16 @@ body.light-mode .sparkle {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 15px 0 0;
   }
 
   .email-paragraph {
-    margin: 0 0 100px 0;
+    margin: 0 0 50px 0;
+  }
+
+  .mobile-copyright {
+    display: block;
+    margin: 10px 0 3vh 0;
   }
 
   .socials-container {
@@ -1003,7 +1004,7 @@ body.light-mode .sparkle {
     align-items: center;
     border-radius: 10px;
     padding: 15px;
-    width: calc(23vw);
+    width: calc(29vw);
     margin: 0 10px;
   }
 
