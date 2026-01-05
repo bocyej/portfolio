@@ -17,7 +17,7 @@ const SoloProjectsList = () => {
   return (
     <>
       <section>
-        <div className="limited-width">
+        <div>
           <section id="title">Solo Projects</section>
           <article id="projects-list">
             <ul>
