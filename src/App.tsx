@@ -6,6 +6,8 @@ import ClickSpark from "./components/reactbits/ClickSpark.tsx";
 import LoadingPage from "./components/LoadingPage.tsx";
 import "./css/component-styles/LoadingPage.css";
 import { useLayoutEffect, useState } from "react";
+import "../src/index.css";
+import "../src/css/Body.css";
 
 function App() {
   const [showLoading, setShowLoading] = useState(false);
@@ -39,7 +41,6 @@ function App() {
         }}
       >
         <ClickSpark
-          sparkColor="#fff"
           sparkSize={10}
           sparkRadius={15}
           sparkCount={8}
