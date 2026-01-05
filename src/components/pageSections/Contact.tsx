@@ -9,8 +9,8 @@ import "../../css/Body.css";
 const Contact = () => {
   return (
     <>
-      <section>
-        <div className="limited-width">
+      <div id="contact">
+        <section>
           <section id="title">Contact</section>
           <article id="contact-area">
             <TextType
@@ -52,8 +52,8 @@ const Contact = () => {
               &copy; 2025 Jacob Laurel. All Rights Reserved.
             </p>
           </article>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 };

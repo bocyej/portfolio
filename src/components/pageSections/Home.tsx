@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <div id="home">
         <section className="introduction">
-          <div className="limited-width">
+          <div>
             <article className="introduction-description">
               <h1>
                 What's Up? I'm <span className="sparkle">Jacob Laurel</span>
@@ -25,8 +25,8 @@ const Home = () => {
                 try to do it in my free time. :)
               </p>
               <p>
-                Interested? Check out more information about me and what I do,
-                and you can contact me through my socials.
+                Want to know more? Check out the information about me and what I
+                do below! And contact me through my socials.
               </p>
             </article>
 

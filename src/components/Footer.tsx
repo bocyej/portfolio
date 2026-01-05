@@ -16,7 +16,7 @@ function Footer() {
     <>
       <footer>
         <section>
-          <div className="limited-width">
+          <div>
             <Copyright />
             <div className="footer-social-media">
               <SocialMediaButton
