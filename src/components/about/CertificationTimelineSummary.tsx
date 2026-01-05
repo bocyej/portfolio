@@ -9,6 +9,13 @@ const CertificationTimelineSummary = () => {
         <article className="timeline">
           <ul>
             <CertificationCircle
+              certificationName={"Career Essentials in Generative AI"}
+              year={"2025"}
+              link={
+                "https://www.linkedin.com/learning/certificates/a79cf09be27e62a4663a7bd0817bed847954951d3c5901b68c50ad1001d7cd88?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B3N%2BoTl6SSzqq5nsqgLZGpw%3D%3D"
+              }
+            />
+            <CertificationCircle
               certificationName={"Microsoft Certified: Azure Fundamentals"}
               year={"2024"}
               link={
