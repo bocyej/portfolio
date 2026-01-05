@@ -160,8 +160,8 @@ body.light-mode .sparkle {
 }
 
 .sub-page-title {
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 35px;
+  font-weight: 800;
 }
 
 .work-experience {
@@ -299,21 +299,39 @@ body.light-mode .sparkle {
   margin: 25px 0 0 0;
 }
 
+.short-description {
+  margin: 0 0 15px 0;
+}
+
+#techstack-more {
+  max-width: 80%;
+}
+
+.tech-background-rectangle {
+  border-radius: 15px;
+  min-width: 50%;
+  max-width: 75%;
+  margin: 0 0 0 5px;
+}
+
 .techstack-rectangle {
   border-radius: 8px;
   border: var(--rectangle-border);
-  background-color: var(--timeline-circle-background);
+  background-color: transparent;
   padding: 5px 10px;
-  margin: 5px 5px 10px 0;
+  margin: 5px 5px 5px 0;
 }
 
 .category {
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 15px 0 5px 0;
 }
 
 .tech-cards {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .stack {
@@ -459,6 +477,14 @@ body.light-mode .sparkle {
 }
 
 /* ---CONTACT PAGE--- */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 50px 0 0 0;
+}
+
 #contact-area {
   width: 100%;
   display: flex;
@@ -512,21 +538,15 @@ body.light-mode .sparkle {
   margin: 0 0 0 5px;
 }
 
-@media only screen and (max-width: 430px) {
-  main {
-    margin: 0 0 50px 0;
-  }
+.mobile-copyright {
+  display: none;
+}
 
+@media only screen and (max-width: 430px) {
   .introduction-description h1,
   .introduction-description p {
     width: 100%;
     max-width: 100%;
-  }
-
-  .limited-width {
-    align-items: center;
-    width: 100%;
-    padding: 0 25px;
   }
 
   .social-media {
@@ -536,7 +556,6 @@ body.light-mode .sparkle {
   .modal-content {
     max-width: 400px;
   }
-
 
   /* ---ABOUT PAGE--- */
   #about {
@@ -636,7 +655,7 @@ body.light-mode .sparkle {
   .techstack-rectangle {
     border-radius: 8px;
     border: var(--rectangle-border);
-    background-color: var(--timeline-circle-background);
+    background-color: transparent;
     padding: 5px 10px;
     margin: 5px 5px 10px 0;
   }
@@ -752,7 +771,8 @@ body.light-mode .sparkle {
     margin: 0;
   }
 
-  .mobile-copyright{
+  .mobile-copyright {
+    display: block;
     margin: 50px 0 25px 0;
   }
 
@@ -782,20 +802,10 @@ body.light-mode .sparkle {
 }
 
 @media only screen and (min-width: 431px) and (max-width: 1100px) {
-  main {
-    margin: 0 0 50px 0;
-  }
-
   .introduction-description h1,
   .introduction-description p {
     width: 100%;
     max-width: 100%;
-  }
-
-  .limited-width {
-    align-items: center;
-    width: 100dvw;
-    padding: 0 25px;
   }
 
   .social-media {
