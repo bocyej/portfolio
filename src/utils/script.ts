@@ -33,51 +33,10 @@ export function switchTheme(): void {
       : "src/assets/photos/light-mode.png";
   }
 
-  const paragraphs: NodeListOf<HTMLParagraphElement> =
-    document.querySelectorAll("p");
-  const aTag: NodeListOf<HTMLAnchorElement> = document.querySelectorAll("a");
-
-  const projectCard: NodeListOf<HTMLElement> =
-    document.querySelectorAll(".project-card");
-  const cardHover: NodeListOf<HTMLElement> =
-    document.querySelectorAll(".card-hover");
-  const cardText: NodeListOf<HTMLElement> =
-    document.querySelectorAll(".card-text");
-  const toolsAndLanguages: NodeListOf<HTMLElement> = document.querySelectorAll(
-    ".tools-or-languages"
-  );
   const iconPath: NodeListOf<HTMLElement> =
     document.querySelectorAll(".icon-path");
 
   if (isLightTheme) {
-    aTag.forEach((link) => {
-      link.classList.add("dark-text");
-      link.classList.remove("light-text");
-    });
-
-    paragraphs.forEach((link) => {
-      link.classList.add("dark-text");
-      link.classList.remove("light-text");
-    });
-
-    projectCard.forEach((link) => {
-      link.classList.add("card-dark");
-      link.classList.remove("card-light");
-    });
-
-    cardHover.forEach((link) => {
-      link.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
-    });
-
-    cardText.forEach((link) => {
-      link.classList.add("card-description-color-light");
-      link.classList.remove("card-description-color-dark");
-    });
-
-    toolsAndLanguages.forEach((link) => {
-      link.style.border = "#313638 1px solid";
-    });
-
     iconPath.forEach((link) => {
       link.style.fill = "#313638";
     });
@@ -85,34 +44,6 @@ export function switchTheme(): void {
     document.body.classList.add("light-mode");
     document.body.classList.remove("dark-mode");
   } else if (isDarkTheme) {
-    aTag.forEach((link) => {
-      link.classList.remove("dark-text");
-      link.classList.add("light-text");
-    });
-
-    paragraphs.forEach((link) => {
-      link.classList.remove("dark-text");
-      link.classList.add("light-text");
-    });
-
-    projectCard.forEach((link) => {
-      link.classList.remove("card-dark");
-      link.classList.add("card-light");
-    });
-
-    cardHover.forEach((link) => {
-      link.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
-    });
-
-    cardText.forEach((link) => {
-      link.classList.remove("card-description-color-light");
-      link.classList.add("card-description-color-dark");
-    });
-
-    toolsAndLanguages.forEach((link) => {
-      link.style.border = "#E8E9EB 1px solid";
-    });
-
     iconPath.forEach((link) => {
       link.style.fill = "#E8E9EB";
     });
