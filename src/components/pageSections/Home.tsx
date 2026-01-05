@@ -31,9 +31,9 @@ const Home = () => {
         <section className="introduction">
           <div>
             <article className="introduction-description">
-              <h1>
+              <div className="greeting">
                 What's Up? I'm <span className="sparkle">Jacob Laurel</span>
-              </h1>
+              </div>
               <p>
                 I am a Full Stack Developer and have experience in building
                 applications and websites using Flutter and web technologies. I
