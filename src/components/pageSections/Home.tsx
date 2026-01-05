@@ -8,6 +8,22 @@ import TechStack from "./Tech";
 import "../../index.css";
 import "../../css/Body.css";
 
+const scrollToTargetArea = () => {
+  const scrollTarget = document.getElementById("about");
+
+  if (scrollTarget) {
+    const scrollOffset = scrollTarget.getBoundingClientRect();
+    const topElement = scrollOffset.top + window.scrollY;
+    const scrollToPosition = topElement - 25;
+
+
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: "smooth", 
+    });
+  }
+};
+
 const Home = () => {
   return (
     <>
@@ -31,7 +47,7 @@ const Home = () => {
             </article>
 
             <div className="to-projects">
-              <a href="projects.html">
+              <a onClick={scrollToTargetArea}>
                 <p>
                   See what I do!{" "}
                   <i
