@@ -1,7 +1,7 @@
 import "../../index.css";
 import "../../css/Body.css";
 
-function InstagramIcon() {
+function ArrowBack() {
   return (
     <>
       <svg fill="none" stroke="var(--color)" viewBox="0 0 24 24" width="30" height="30">
@@ -16,4 +16,4 @@ function InstagramIcon() {
   );
 }
 
-export default InstagramIcon;
+export default ArrowBack;
