@@ -5,8 +5,8 @@ function CloseIcon() {
   return (
     <>
       <svg
-        fill="var(--color)"
-        stroke="var(--color)"
+        fill="#e8e9eb"
+        stroke="#e8e9eb"
         viewBox="0 0 24 24"
         width="30"
         height="30"
