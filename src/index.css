@@ -47,6 +47,8 @@ body.light-mode {
   --timeline-circle-border: 3px solid #313638;
   --rectangle-border: 1px solid #313638;
   --color: #313638;
+  --card-color: #313638;
+  --card-text-color: #e8e9eb;
 }
 
 body.dark-mode {
@@ -55,6 +57,8 @@ body.dark-mode {
   --timeline-circle-border: 3px solid #e8e9eb;
   --rectangle-border: 1px solid #e8e9eb;
   --color: #e8e9eb;
+  --card-color: #e8e9eb;
+  --card-text-color: #313638;
 }
 
 main {
@@ -69,8 +73,28 @@ ul {
   list-style: none;
 }
 
+h1 {
+  color: var(--color);
+}
+
+h2 {
+  color: var(--color);
+}
+
+h3 {
+  color: var(--color);
+}
+
+h4 {
+  color: var(--color);
+}
+
+p {
+  color: var(--color);
+}
+
 a {
-  color: #e8e9eb;
+  color: var(--color);
 }
 
 .no-scroll {
@@ -151,7 +175,7 @@ body.light-mode .underline::after {
 
 @media only screen and (max-width: 430px) {
   main {
-    padding: 0;
+    padding: 0 5vw;
   }
 
   .no-scroll {
@@ -167,11 +191,23 @@ body.light-mode .underline::after {
   .dark-text {
     color: #313638 !important;
   }
+
+  .center-horizontally {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+  }
+
+  .title-spacing p{
+    margin: 20px 0 0;
+  }
 }
 
 @media only screen and (min-width: 431px) and (max-width: 1100px) {
   main {
-    padding: 0 3vw;
+    padding: 0 3vw 5vh 3vw;
   }
 
   .no-scroll {
