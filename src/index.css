@@ -13,13 +13,14 @@ body {
 }
 
 body {
-  background-color: #313638;
-  color: #e8e9eb;
+  background-color: var(--card-text-color);
+  color: var(--color);
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   transition: none;
+  /* min-height: 100vh; */
 }
 
 body.theme-transition {
@@ -162,7 +163,7 @@ a {
   transition: width 0.2s;
 }
 
-body.light-mode .underline::after {
+html.light-mode .underline::after {
   background-color: #313638;
 }
 
