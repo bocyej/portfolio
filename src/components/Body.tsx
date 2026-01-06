@@ -30,6 +30,8 @@ const Body = () => {
         </Routes>
 
       </main>
+      
+      <Footer />
     </>
   );
 };

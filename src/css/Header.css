@@ -1,10 +1,10 @@
 header {
   background-color: inherit;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   width: 100%;
-  top: 0;
-  margin: 50px 0;
+  height: 100%;
+  /* margin: 50px 0; */
 }
 
 nav {
@@ -17,11 +17,14 @@ nav {
 
 nav ul {
   display: flex;
+  flex-direction: column;
   text-transform: none;
+  align-items: center;
+  margin: 25px 0;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 15px;
 }
 
 .nav-link {
