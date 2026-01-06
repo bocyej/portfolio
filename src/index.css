@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #313638;
+  color: #e8e9eb;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  transition: none;
+}
+
+body.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  color: #ffd51e;
+}
+
+:root {
+  --timeline-border-left: 2px solid #313638;
+  --timeline-circle-background: #e8e9eb;
+  --timeline-circle-border: 3px solid #313638;
+}
+
+body.light-mode {
+  --timeline-border-left: 2px solid #313638;
+  --timeline-circle-background: #e8e9eb;
+  --timeline-circle-border: 3px solid #313638;
+}
+
+body.dark-mode {
+  --timeline-border-left: 2px solid #e8e9eb;
+  --timeline-circle-background: #313638;
+  --timeline-circle-border: 3px solid #e8e9eb;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #e8e9eb;
+}
+
+.no-scroll {
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100%;
+  width: 100dvw;
+  max-width: 100%;
+}
+
+.light-mode {
+  background-color: #e8e9eb !important;
+  color: #313638 !important;
+}
+
+.dark-mode {
+  background-color: #313638 !important;
+  color: #e8e9eb !important;
+}
+
+.light-text {
+  color: #e8e9eb !important;
+}
+
+.dark-text {
+  color: #313638 !important;
+}
+
+@media only screen and (max-width: 360px) {
+}
+
+@media only screen and (max-width: 430px) {
+  .no-scroll {
+    height: 100vh;
+    height: 100dvh;
+    width: 100dvw;
+  }
+
+  .light-text {
+    color: #e8e9eb !important;
+  }
+
+  .dark-text {
+    color: #313638 !important;
+  }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 1100px) {
+  .no-scroll {
+    height: 100vh;
+    height: 100dvh;
+    width: 100dvw;
+  }
+
+  .light-text {
+    color: #e8e9eb !important;
+  }
+
+  .dark-text {
+    color: #313638 !important;
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1280px) {
+}
