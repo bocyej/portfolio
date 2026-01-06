@@ -7,6 +7,8 @@ import Contact from "./pageSections/Contact";
 import Home from "./pageSections/Home";
 import MobileNavBar from "./MobileNavbar";
 import Projects from "./pageSections/Projects";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Body = () => {
   useEffect(() => {
@@ -19,16 +21,19 @@ const Body = () => {
       <MobileNavBar />
 
       <main id="content">
-        
-        <Home />
+        <div id="left-nav">
+          <Header />
+        </div>
 
-        <About />
-
-        <Projects />
-
-        <Contact />
-
+        <div id="right-content">
+          <Home />
+          <About />
+          <Projects />
+          <Contact />
+        </div>
       </main>
+      
+      <Footer />
     </>
   );
 };
