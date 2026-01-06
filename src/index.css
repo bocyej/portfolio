@@ -170,6 +170,21 @@ body.light-mode .underline::after {
   width: 120%;
 }
 
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
 @media only screen and (max-width: 360px) {
 }
 
@@ -200,7 +215,7 @@ body.light-mode .underline::after {
     width: 100%;
   }
 
-  .title-spacing p{
+  .title-spacing p {
     margin: 20px 0 0;
   }
 }
