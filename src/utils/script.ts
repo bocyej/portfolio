@@ -25,12 +25,12 @@ export function switchTheme(): void {
 
   if (headerLogo && toggleThemeLogo) {
     headerLogo.src = isLightTheme
-      ? "../assets/photos/logo-dark.png"
-      : "../assets/photos/logo-light.png";
+      ? "src/assets/photos/logo-dark.png"
+      : "src/assets/photos/logo-light.png";
 
     toggleThemeLogo.src = isLightTheme
-      ? "../assets/photos/dark-mode.png"
-      : "../assets/photos/light-mode.png";
+      ? "src/assets/photos/dark-mode.png"
+      : "src/assets/photos/light-mode.png";
   }
 
   const iconPath: NodeListOf<HTMLElement> =
