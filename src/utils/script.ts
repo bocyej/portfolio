@@ -26,11 +26,11 @@ export function switchTheme(): void {
   if (headerLogo && toggleThemeLogo) {
     headerLogo.src = isLightTheme
       ? "/assets/photos/logo-dark.png"
-      : "/assets/photos/logo-light.png";
+      : "/assets/logo-light-3nXU1WYb.png";
 
     toggleThemeLogo.src = isLightTheme
       ? "/assets/photos/dark-mode.png"
-      : "/assets/photos/light-mode.png";
+      : "/assets/light-mode-B9RX0Npw.png";
   }
 
   const iconPath: NodeListOf<HTMLElement> =
