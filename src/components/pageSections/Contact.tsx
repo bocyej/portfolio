@@ -9,7 +9,7 @@ import "../../css/Body.css";
 const Contact = () => {
   return (
     <>
-      <div id="contact">
+      <div id="contact" className="fadeInUp-animation">
         <section>
           <section id="title">Contact</section>
           <article id="contact-area">

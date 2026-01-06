@@ -7,7 +7,7 @@ const CertificationTimeline = () => {
   return (
     <>
       <BackButton title={"Certifications"} />
-      <div className="center-horizontally">
+      <div className="center-horizontally fadeInUp-animation">
         <div></div>
         <section className="background-rectangle">
           <article className="timeline">

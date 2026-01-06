@@ -14,7 +14,7 @@ function Footer() {
 
   return (
     <>
-      <footer>
+      <footer  className="fadeInUp-animation">
         <section>
           <div>
             <Copyright />

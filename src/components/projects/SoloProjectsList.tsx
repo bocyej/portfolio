@@ -19,7 +19,7 @@ const SoloProjectsList = () => {
       <section>
         <div>
           <section id="title">Solo Projects</section>
-          <article id="projects-list">
+          <article id="projects-list" className="fadeInUp-animation">
             <ul>
               <ProjectCard
                 image={vitalMonitorThumbnail}

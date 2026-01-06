@@ -16,10 +16,9 @@ const scrollToTargetArea = () => {
     const topElement = scrollOffset.top + window.scrollY;
     const scrollToPosition = topElement - 25;
 
-
     window.scrollTo({
       top: scrollToPosition,
-      behavior: "smooth", 
+      behavior: "smooth",
     });
   }
 };
@@ -28,7 +27,7 @@ const Home = () => {
   return (
     <>
       <div id="home">
-        <section className="introduction">
+        <section className="introduction fadeInUp-animation">
           <div>
             <article className="introduction-description">
               <div className="greeting">

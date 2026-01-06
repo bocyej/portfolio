@@ -16,11 +16,11 @@ const CollaborationProjectsList = () => {
   return (
     <>
       <section>
-        <div className="limited-width">
+        <div>
           <section id="title" className="collaboration">
             Collaboration Projects
           </section>
-          <article id="projects-list">
+          <article id="projects-list" className="fadeInUp-animation">
             <ul>
               <ProjectCard
                 image={silidThumbnail}

@@ -7,7 +7,7 @@ const ExperienceTimeline = () => {
   return (
     <>
       <BackButton title={"Experiences"} />
-      <div className="center-horizontally">
+      <div className="center-horizontally fadeInUp-animation">
         <div></div>
         <section className="background-rectangle">
           <article className="timeline">

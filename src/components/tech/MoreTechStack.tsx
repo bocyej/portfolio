@@ -8,8 +8,8 @@ const MoreTechStack = () => {
   return (
     <>
       <BackButton title={"Tech Stack"} />
-      <p className="short-description">These are the tech stuff that I've used before. <span>**These may or may not be used everyday** </span></p>
-      <section className="tech-background-rectangle">
+      <p className="short-description fadeInUp-animation">These are the tech stuff that I've used before. <span>**These may or may not be used everyday** </span></p>
+      <section className="tech-background-rectangle fadeInUp-animation">
         <div id="techstack">
           <Category
             label={"Frontend"}

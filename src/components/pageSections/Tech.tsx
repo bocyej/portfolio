@@ -7,7 +7,7 @@ import "../../css/Body.css";
 const Tech = () => {
   return (
     <>
-      <div id="tech">
+      <div id="tech" className="fadeInUp-animation">
         <AboutInfo
           title={"Tech Stack"}
           content={<TechStackSummary />}

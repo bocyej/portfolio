@@ -1,13 +1,13 @@
 import AboutInfo from "../about/AboutInfo";
 import CertificationTimelineSummary from "../about/CertificationTimelineSummary";
-import ExperienceTimelineSummary from "../about/ExperienceTimelineSummary"
+import ExperienceTimelineSummary from "../about/ExperienceTimelineSummary";
 import "../../index.css";
-import "../../css/Body.css";;
+import "../../css/Body.css";
 
 const About = () => {
   return (
     <>
-      <div id="about">
+      <div id="about" className="fadeInUp-animation">
         <AboutInfo
           title={"Work Experience"}
           content={<ExperienceTimelineSummary />}
