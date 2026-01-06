@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import TechStack from "./Tech";
 import "../../index.css";
 import "../../css/Body.css";
+import ArrowRight from "../icons/ArrowRight";
 
 const scrollToTargetArea = () => {
   const scrollTarget = document.getElementById("about");
@@ -49,11 +50,7 @@ const Home = () => {
               <a onClick={scrollToTargetArea}>
                 <p>
                   See what I do!{" "}
-                  <i
-                    className="fa fa-long-arrow-right"
-                    id="arrow"
-                    aria-hidden="true"
-                  ></i>
+                  <ArrowRight />
                 </p>
               </a>
             </div>

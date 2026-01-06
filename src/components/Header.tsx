@@ -4,6 +4,7 @@ import toggleLogo from "../assets/photos/light-mode.png";
 import { useEffect } from "react";
 import { switchTheme, showMobileNavModal } from "../utils/script";
 import MenuIcon from "./icons/Menu";
+import { Link } from "react-router-dom";
 
 function Header() {
   useEffect(() => {
@@ -24,14 +25,14 @@ function Header() {
     <>
       <header>
         <nav>
-          <a href="/">
+          <Link to="/">
             <img
               id="header-logo"
               src={headerLogo}
               alt="Logo"
               className="header-logo"
             />
-          </a>
+          </Link>
           <a
             onClick={toggleMobileModal}
             className="hamburger"
