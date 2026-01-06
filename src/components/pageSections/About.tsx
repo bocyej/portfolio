@@ -1,17 +1,24 @@
 import AboutInfo from "../about/AboutInfo";
-import CertificationTimeline from "../about/CertificationTimeline";
-import ExperienceTimeline from "../about/ExperienceTimeline";
-import Divider from "../Divider";
+import CertificationTimelineSummary from "../about/CertificationTimelineSummary";
+import ExperienceTimelineSummary from "../about/ExperienceTimelineSummary";
+import "../../index.css";
+import "../../css/Body.css";
 
 const About = () => {
   return (
     <>
-      <div id="about">
-        <AboutInfo title={"Work Experience"} content={<ExperienceTimeline />} />
+      <div id="about" className="fadeInUp-animation">
+        <AboutInfo
+          title={"Work Experience"}
+          content={<ExperienceTimelineSummary />}
+          additionalClass="work-experience"
+        />
 
-        <Divider />
-
-        <AboutInfo title={"Certifications"} content={<CertificationTimeline />} />
+        <AboutInfo
+          title={"Certifications"}
+          content={<CertificationTimelineSummary />}
+          additionalClass="certifications"
+        />
       </div>
     </>
   );

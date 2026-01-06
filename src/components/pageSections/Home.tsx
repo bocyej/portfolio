@@ -2,17 +2,38 @@ import GitHubIcon from "../icons/Github";
 import InstagramIcon from "../icons/Instagram";
 import LinkedinIcon from "../icons/Linkedin";
 import SocialMediaButton from "../SocialMediaButton";
+import About from "./About";
+import Contact from "./Contact";
+import TechStack from "./Tech";
+import "../../index.css";
+import "../../css/Body.css";
+import ArrowRight from "../icons/ArrowRight";
+
+const scrollToTargetArea = () => {
+  const scrollTarget = document.getElementById("about");
+
+  if (scrollTarget) {
+    const scrollOffset = scrollTarget.getBoundingClientRect();
+    const topElement = scrollOffset.top + window.scrollY;
+    const scrollToPosition = topElement - 25;
+
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: "smooth",
+    });
+  }
+};
 
 const Home = () => {
   return (
     <>
       <div id="home">
-        <section className="introduction">
-          <div className="limited-width">
+        <section className="introduction fadeInUp-animation">
+          <div>
             <article className="introduction-description">
-              <h1>
+              <div className="greeting">
                 What's Up? I'm <span className="sparkle">Jacob Laurel</span>
-              </h1>
+              </div>
               <p>
                 I am a Full Stack Developer and have experience in building
                 applications and websites using Flutter and web technologies. I
@@ -20,22 +41,16 @@ const Home = () => {
                 try to do it in my free time. :)
               </p>
               <p>
-                Interested? Check out more information about me and what I do,
-                and you can contact me through my socials.
+                Want to know more? Check out the information about me and what I
+                do below! And contact me through my socials.
               </p>
             </article>
 
             <div className="to-projects">
-              <a href="projects.html">
+              <a onClick={scrollToTargetArea}>
                 <p>
                   See what I do!{" "}
-                  <i
-                    className="fa fa-long-arrow-right"
-                    id="arrow"
-                    aria-hidden="true"
-                  >
-                    ---
-                  </i>
+                  <ArrowRight />
                 </p>
               </a>
             </div>
@@ -57,6 +72,12 @@ const Home = () => {
           </div>
         </section>
       </div>
+
+      <About />
+
+      <TechStack />
+
+      <Contact />
     </>
   );
 };

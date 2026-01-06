@@ -2,13 +2,13 @@ import "../css/Body.css";
 import "../assets/photos/light-mode.png";
 import { useEffect } from "react";
 import { introductionAnimation, switchTheme } from "../utils/script";
-import About from "./pageSections/About";
-import Contact from "./pageSections/Contact";
 import Home from "./pageSections/Home";
 import MobileNavBar from "./MobileNavbar";
-import Projects from "./pageSections/Projects";
-import Header from "./Header";
-import Footer from "./Footer";
+import Projects from "./projects/Projects";
+import { Routes, Route } from "react-router-dom";
+import CertificationTimeline from "./about/CertificationTimeline";
+import ExperienceTimeline from "./about/ExperienceTimeline";
+import MoreTechStack from "./tech/MoreTechStack";
 
 const Body = () => {
   useEffect(() => {
@@ -21,16 +21,14 @@ const Body = () => {
       <MobileNavBar />
 
       <main id="content">
-        <div id="left-nav">
-          <Header />
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/certifications" element={<CertificationTimeline />}></Route>
+          <Route path="/experiences" element={<ExperienceTimeline />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/tech-stack" element={<MoreTechStack />}></Route>
+        </Routes>
 
-        <div id="right-content">
-          <Home />
-          <About />
-          <Projects />
-          <Contact />
-        </div>
       </main>
       
       <Footer />

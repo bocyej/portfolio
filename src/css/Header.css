@@ -10,10 +10,9 @@ header {
 nav {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  margin: 50px 0 0 0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 19vw;
 }
 
 nav ul {
@@ -37,29 +36,6 @@ nav ul li {
   font-style: normal;
   user-select: none;
   -webkit-user-drag: none;
-}
-
-.underline {
-  position: relative;
-}
-
-.underline::after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  left: -5px;
-  bottom: -10px;
-  width: 0;
-  background-color: #e8e9eb;
-  transition: width 0.2s;
-}
-
-body.light-mode .underline::after {
-  background-color: #313638;
-}
-
-.underline:hover::after {
-  width: 120%;
 }
 
 nav a {
@@ -103,7 +79,7 @@ body.modal-open {
 }
 
 .close-icon {
-  color: #e8e9eb !important;
+  color: var(--card-text-color);
   display: block;
   margin: 0 0 5px 0;
   font-size: 35px !important;
@@ -159,7 +135,7 @@ body.modal-open header {
   top: 1rem;
   right: 1.5rem;
   font-size: 1.5rem;
-  color: white;
+  color: var(--card-text-color);
   text-decoration: none;
 }
 
@@ -254,7 +230,7 @@ body.modal-open header {
   }
 
   .close-icon {
-    color: #e8e9eb !important;
+    color: var(--card-text-color);
     display: block;
     margin: 0 0 5px 0;
     font-size: 35px !important;
@@ -374,7 +350,7 @@ body.modal-open header {
   }
 
   .close-icon {
-    color: #e8e9eb !important;
+    color: var(--card-text-color);
     display: block;
     margin: 0 0 5px 0;
     font-size: 35px !important;
@@ -397,10 +373,6 @@ body.modal-open header {
 }
 
 @media only screen and (min-width: 1101px) and (max-width: 1280px) {
-  .limited-width {
-    width: 90%;
-  }
-
   main section {
     width: 100%;
   }

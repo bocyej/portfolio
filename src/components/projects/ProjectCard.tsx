@@ -1,3 +1,5 @@
+import "../../index.css";
+import "../../css/Body.css";
 import type { ReactNode } from "react";
 
 interface Props {
@@ -28,7 +30,7 @@ const ProjectCard = ({
         </div>
         <a href={link} target="_blank">
           <div className="card-hover">
-            <h3 className="card-text">{cardTitle}</h3>
+            <p className="card-text card-title">{cardTitle}</p>
             <p className="card-text">{description}</p>
             <ul className="tools-or-languages-list">
                 {toolsOrLanguage}

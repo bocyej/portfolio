@@ -10,13 +10,16 @@ import vitalMonitorThumbnail from "../../assets/photos/vital-monitor-thumbnail.p
 import weatherAppThumbnail from "../../assets/photos/weather-app-thumbnail.png";
 import youtubeMockupThumbnail from "../../assets/photos/youtube-mockup-thumbnail.png";
 
+import "../../index.css";
+import "../../css/Body.css";
+
 const SoloProjectsList = () => {
   return (
     <>
       <section>
-        <div className="limited-width">
+        <div>
           <section id="title">Solo Projects</section>
-          <article id="projects-list">
+          <article id="projects-list" className="fadeInUp-animation">
             <ul>
               <ProjectCard
                 image={vitalMonitorThumbnail}

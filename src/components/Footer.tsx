@@ -14,9 +14,9 @@ function Footer() {
 
   return (
     <>
-      <footer>
+      <footer  className="fadeInUp-animation">
         <section>
-          <div className="limited-width">
+          <div>
             <Copyright />
             <div className="footer-social-media">
               <SocialMediaButton

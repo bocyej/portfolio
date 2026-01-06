@@ -1,3 +1,6 @@
+import "../../index.css";
+import "../../css/Body.css";
+
 interface Props {
   certificationName: string;
   year: string;
@@ -11,9 +14,9 @@ const CertificationCircle = ({ certificationName, year, link }: Props) => {
         <div className="timeline-information">
           <div className="title-and-year">
             <h2>{certificationName}</h2>
-            <h4>{year}</h4>
+            <p>{year}</p>
           </div>
-          <h4 className="view-button">
+          <div className="view-button">
             <a
               href={link}
               target="_blank"
@@ -21,7 +24,7 @@ const CertificationCircle = ({ certificationName, year, link }: Props) => {
             >
               View Certification
             </a>
-          </h4>
+          </div>
         </div>
       </li>
     </>
