@@ -1,5 +1,5 @@
 import darkThemeLogo from "@/assets/photos/logo-dark.png";
-import lightThemeLogo from "@/assets/photos/logo-dark.png";
+import lightThemeLogo from "@/assets/photos/logo-light.png";
 import darkThemeIcon from "@/assets/photos/dark-mode.png"
 import lightThemeIcon from "@/assets/photos/light-mode.png"
 
