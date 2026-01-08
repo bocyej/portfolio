@@ -1,3 +1,8 @@
+import darkThemeLogo from "@/assets/photos/logo-dark.png";
+import lightThemeLogo from "@/assets/photos/logo-light.png";
+import darkThemeIcon from "@/assets/photos/dark-mode.png"
+import lightThemeIcon from "@/assets/photos/light-mode.png"
+
 window.addEventListener("load", () => {
   document.body.classList.add("theme-transition");
   document.body.classList.add("dark-mode");
@@ -25,12 +30,12 @@ export function switchTheme(): void {
 
   if (headerLogo && toggleThemeLogo) {
     headerLogo.src = isLightTheme
-      ? "../assets/photos/logo-dark.png"
-      : "../assets/photos/logo-light.png";
+      ? darkThemeLogo
+      : lightThemeLogo
 
     toggleThemeLogo.src = isLightTheme
-      ? "../assets/photos/dark-mode.png"
-      : "../assets/photos/light-mode.png";
+      ? darkThemeIcon
+      : lightThemeIcon
   }
 
   const iconPath: NodeListOf<HTMLElement> =
