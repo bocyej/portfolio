@@ -191,7 +191,7 @@ html.light-mode .underline::after {
 
 @media only screen and (max-width: 430px) {
   main {
-    padding: 0 5vw;
+    padding: 0 5vw 8vh 5vw;
   }
 
   .no-scroll {
@@ -214,6 +214,10 @@ html.light-mode .underline::after {
     justify-content: space-between;
     align-items: start;
     width: 100%;
+  }
+
+  .title-spacing {
+    margin: 0;
   }
 
   .title-spacing p {
