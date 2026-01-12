@@ -490,11 +490,10 @@ body.light-mode p .sparkle {
 
 .project-modal-content {
   margin: auto;
-  height: 80%;
-  width: 80%;
+  max-height: 80%;
   max-width: 80%;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 5vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1.5vw;
   border-radius: 10px;
 }
 
