@@ -469,6 +469,53 @@ body.light-mode p .sparkle {
   font-weight: 500;
 }
 
+.project-rectangle {
+  border-radius: 8px;
+  border: var(--rectangle-border);
+  background-color: transparent;
+  padding: 5px 10px;
+  margin: 5px 5px 25px 0;
+}
+
+/* ---MODAL--- */
+.project-modal-overlay {
+  /* filter: blur(5px); */
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 25;
+  margin: auto 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.project-modal-content {
+  margin: auto;
+}
+
+.project-modal-close-button{
+  background-color: transparent;
+}
+
+.modal-title{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.modal-description{
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.modal-techstack{
+  display: flex;
+  flex-direction: horizontal;
+}
+
 /* ---CONTACT PAGE--- */
 #contact {
   display: flex;
@@ -661,7 +708,7 @@ body.light-mode p .sparkle {
   }
 
   /* ---PROJECTS PAGE--- */
-  #projects{
+  #projects {
     max-width: calc(90vw - 3vw);
     max-width: calc(90vw - 3vw);
   }
@@ -740,8 +787,8 @@ body.light-mode p .sparkle {
   }
 
   .project-card:hover .default-view {
-    filter: blur(4px);
-    opacity: 0.6;
+    filter: none;
+    opacity: 1;
   }
 
   .card-hover {
