@@ -28,7 +28,7 @@ const ProjectCard = ({
           />
           <h2 className="project-title card-text">{cardTitle}</h2>
         </div>
-        <a href={link} target="_blank">
+        <a >
           <div className="card-hover">
             <p className="card-text card-title">{cardTitle}</p>
             <p className="card-text">{description}</p>
