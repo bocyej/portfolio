@@ -2,11 +2,13 @@ import ProjectCard from "./ProjectCard";
 import ToolsOrLanguage from "./ToolsOrLanguage";
 
 import arkiboThumbnail from "../../assets/photos/arkibo-thumbnail.png";
+import automationThumbnail from "../../assets/photos/automation-thumbnail-1.png";
 import facebookMockupThumbnail from "../../assets/photos/facebook-mockup-thumbnail.png";
 import lobeThumbnail from "../../assets/photos/lobe-website-thumbnail.png";
+import movieThumbnail from "../../assets/photos/movie-website.png";
 import prioritizeThumbnail from "../../assets/photos/prioritize-thumbnail.png";
 import twitterMockupThumbnail from "../../assets/photos/twitter-mockup-thumbnail.png";
-import vitalMonitorThumbnail from "../../assets/photos/vital-monitor-thumbnail.png"
+import vitalMonitorThumbnail from "../../assets/photos/vital-monitor-thumbnail.png";
 import weatherAppThumbnail from "../../assets/photos/weather-app-thumbnail.png";
 import youtubeMockupThumbnail from "../../assets/photos/youtube-mockup-thumbnail.png";
 
@@ -67,6 +69,38 @@ const SoloProjectsList = () => {
                     <ToolsOrLanguage toolsOrLanguage={"Gemini"} />
                     <ToolsOrLanguage toolsOrLanguage={"AI"} />
                     <ToolsOrLanguage toolsOrLanguage={"Cloud"} />
+                  </>
+                }
+              />
+              <ProjectCard
+                image={movieThumbnail}
+                cardTitle={"Movie Website"}
+                description={
+                  "A website that lets users browse trending movies, explore favorites and categories, and view movie details."
+                }
+                link={"#"}
+                toolsOrLanguage={
+                  <>
+                    <ToolsOrLanguage toolsOrLanguage={"HTML"} />
+                    <ToolsOrLanguage toolsOrLanguage={"CSS"} />
+                    <ToolsOrLanguage toolsOrLanguage={"JavaScript"} />
+                    <ToolsOrLanguage toolsOrLanguage={"React"} />
+                    <ToolsOrLanguage toolsOrLanguage={"Vite"} />
+                  </>
+                }
+              />
+              <ProjectCard
+                image={automationThumbnail}
+                cardTitle={"Automated Login and Registration"}
+                description={
+                  "An automated testing workflow that validates Facebook login and account creation."
+                }
+                link={"#"}
+                toolsOrLanguage={
+                  <>
+                    <ToolsOrLanguage toolsOrLanguage={"Robot Framework"} />
+                    <ToolsOrLanguage toolsOrLanguage={"Selenium"} />
+                    <ToolsOrLanguage toolsOrLanguage={"Python"} />
                   </>
                 }
               />
