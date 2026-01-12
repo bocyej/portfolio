@@ -2,14 +2,14 @@ import "../../index.css";
 import "../../css/Body.css";
 import Modal from "../Modal";
 import { useState, type ReactNode } from "react";
-import { systemImages } from "../projects/ImageData";
+import type { ImageAsset } from "../projects/ImageData";
 
 interface Props {
   label: string;
   projectTitle: string;
   description: string;
   techStack: ReactNode;
-  images: string;
+  imagesList: ImageAsset[];
   githubLink: string;
   previewLink: string;
   otherLink: string;
@@ -21,7 +21,7 @@ const ProjectRectangle = ({
   projectTitle,
   description,
   techStack,
-  images,
+  imagesList,
   githubLink,
   previewLink,
   otherLink,
@@ -45,7 +45,7 @@ const ProjectRectangle = ({
               <p className="modal-description">{description}</p>
               <div className="modal-techstack">{techStack}</div>
               <div className="image-gallery">
-                {systemImages.map((image) => (
+                {imagesList.map((image) => (
                   <img
                     key={image.id}
                     src={image.src}
@@ -54,11 +54,13 @@ const ProjectRectangle = ({
                 ))}
               </div>
               <div className="modal-links">
-                <a href={githubLink} target="_blank">
-                  GitHub Repository
-                </a>
-                <a href={previewLink}>Preview Demo</a>
-                <a href={otherLink}>{otherLinkLabel}</a>
+                {githubLink && (
+                  <a href={githubLink} target="_blank">
+                    GitHub Repository
+                  </a>
+                )}
+                {previewLink && <a href={previewLink}>Preview Demo</a>}
+                {otherLink && <a href={otherLink}>{otherLinkLabel}</a>}
               </div>
             </>
           }
