@@ -1,6 +1,6 @@
-import React, { type ReactNode } from "react";
 import ReactDOM from "react-dom";
 import Close from "./icons/Close";
+import type { ReactNode } from "react";
 
 interface ModalProps {
   isOpen: boolean;

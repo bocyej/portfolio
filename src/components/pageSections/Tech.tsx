@@ -4,6 +4,13 @@ import "../../index.css";
 import "../../css/Body.css";
 import ProjectRectangle from "../projects/ProjectRectangle";
 import TechStackCard from "../tech/TechStackCard";
+import {
+  vitalMonitorImages,
+  arkiboImages,
+  movieWebsiteImages,
+  automatedLoginImages,
+  silidImages,prioritizeImages
+} from "../projects/ImageData";
 
 const Tech = () => {
   return (
@@ -33,7 +40,7 @@ const Tech = () => {
                     <TechStackCard label={"iOS"} />
                   </>
                 }
-                images={""}
+                imagesList={vitalMonitorImages}
                 githubLink={""}
                 previewLink={""}
                 otherLink={""}
@@ -53,7 +60,7 @@ const Tech = () => {
                     <TechStackCard label={"iOS"} />
                   </>
                 }
-                images={""}
+                imagesList={arkiboImages}
                 githubLink={""}
                 previewLink={""}
                 otherLink={""}
@@ -61,8 +68,10 @@ const Tech = () => {
               />
               <ProjectRectangle
                 label="Movie Website"
-                projectTitle={""}
-                description={""}
+                projectTitle={"Movie Website"}
+                description={
+                  "A website that lets users browse trending movies, explore favorites and categories, and view movie details."
+                }
                 techStack={
                   <>
                     <TechStackCard label={"HTML"} />
@@ -72,7 +81,7 @@ const Tech = () => {
                     <TechStackCard label={"Vite"} />
                   </>
                 }
-                images={""}
+                imagesList={movieWebsiteImages}
                 githubLink={"https://github.com/bocyej/react-movie"}
                 previewLink={""}
                 otherLink={""}
@@ -91,7 +100,7 @@ const Tech = () => {
                     <TechStackCard label={"Python"} />
                   </>
                 }
-                images={""}
+                imagesList={automatedLoginImages}
                 githubLink={
                   "https://github.com/bocyej/facebook-sign-up-automation"
                 }
@@ -116,7 +125,7 @@ const Tech = () => {
                     <TechStackCard label={"Web"} />
                   </>
                 }
-                images={""}
+                imagesList={silidImages}
                 githubLink={""}
                 previewLink={""}
                 otherLink={""}
@@ -137,7 +146,7 @@ const Tech = () => {
                     <TechStackCard label={"Cloud"} />
                   </>
                 }
-                images={""}
+                imagesList={prioritizeImages}
                 githubLink={"https://github.com/bocyej/prioritize"}
                 previewLink={"https://youtu.be/ueek2k6JRZI?si=e1bnNuZVjPBW-BWK"}
                 otherLink={
