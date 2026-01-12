@@ -14,7 +14,6 @@ const ProjectCard = ({
   image,
   cardTitle,
   description,
-  link,
   toolsOrLanguage,
 }: Props) => {
   return (
